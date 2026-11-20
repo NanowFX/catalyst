@@ -2645,9 +2645,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     min-height: 32px;
     cursor: pointer;
     -webkit-user-select: none;
-    filter: hue-rotate(
-195deg
-) contrast(1.5);
+
 }
 
 .lol-settings-window-size-text {
@@ -3098,4 +3096,68 @@ lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
     font-size: 12px;
     display: flex;
     align-items: center;
+}
+
+lol-uikit-navigation-bar[type=tabbed] lol-uikit-navigation-item.lol-settings-nav {
+    align-items: center;
+    color: #4a4a5e;
+    direction: ltr;
+    font-size: 12px;
+    height: auto;
+    line-height: 16px;
+    min-height: 30px;
+    padding: 0 0 0 14px;
+    text-align: left;
+    transition: all .3s ease;
+    width: 147px;
+}
+
+:host-context(lol-uikit-navigation-bar[type=tabbed])::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 1px;
+    background-image: linear-gradient(to bottom, #4b3cc8, #a37dff);
+    background-size: 100% 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 400ms opacity;
+}
+
+:host ::slotted(label) {
+    color: #9390c7;
+    cursor: pointer;
+    margin: 1px 0 0 5px;
+}
+
+.license-agreement-settings .license-agreement-settings-title, .lol-settings-chat-section-title, .lol-settings-general-section-title, .lol-settings-ingame-section-title, .lol-settings-legal-statements .title, .lol-settings-license .title, .lol-settings-version .title, .lol-settings-voice-section-title, .replays-settings-root-title {
+    color: #dfd2f0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .075em;
+    line-height: 18px;
+}
+
+.lol-settings-title {
+    color: #8d8ca0;
+    direction: ltr;
+}
+
+:host span.checkbox-span {
+    width: 14px;
+    height: 14px;
+    background: url(/fe/lol-uikit/images/checkbox-spritesheet.png) no-repeat;
+    cursor: pointer;
+    flex-shrink: 0;
+    filter: grayscale(1) brightness(1.5) contrast(1.5);
+}
+
+.lol-settings-general-subtitle {
+    color: #6a5ac5;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 0;
 }
