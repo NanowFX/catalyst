@@ -3024,3 +3024,48 @@ lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
     background-repeat: no-repeat;
     filter: hue-rotate(25deg) brightness(1) contrast(1.1);
 }
+
+.lol-leagues-division-btn {
+    border-bottom: 3px solid transparent;
+    color: #a391cd;
+    cursor: pointer;
+    display: block;
+    max-width: 181px;
+    padding-bottom: 6px;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.lol-leagues-division-btn.active, .lol-leagues-division-btn:hover {
+    border-bottom-color: #2d2878;
+    color: #f0e6d2;
+    text-shadow: 0px 0px 20px white;
+}
+
+.lol-leagues .countdown-timer-component .countdown-time-left {
+    color: #7c6ec8;
+}
+
+.lol-leagues .lol-leagues-info-season-header .lol-leagues-header-split-info-remaining-time-container .lol-leagues-header-split-info-remaining-time {
+    color: #f3f3f5;
+}
+
+.lol-leagues .lol-leagues-info-season-header .lol-leagues-header-split-info-remaining-time-container .lol-leagues-header-split-info-remaining-time-icon {
+    background-color: #916ec8;
+    height: 16px;
+    margin-right: 5px;
+    -webkit-mask-image: url(/fe/lol-static-assets/images/clock-icon.svg);
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    width: 16px;
+}
+
+:host-context(lol-uikit-navigation-bar[type=nav-bar]) .section:hover:not(.disabled), :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section:hover:not(.disabled) {
+    color: #e0d2f0;
+}
+
+:host-context(lol-uikit-navigation-bar[type=nav-bar]) .section:not(.active):not(.disabled):active, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section:not(.active):not(.disabled):active {
+    color: #7353bf;
+}
