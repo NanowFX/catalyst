@@ -1796,17 +1796,7 @@ filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
     box-shadow: 1px 0px 21px #9100ff;
 }
 
-:host .lol-uikit-full-page-modal-container {
-    position: absolute;
-    left: 0px;
-    top: 77px;
-    width: 1055px;
-    height: 642px;
-    box-sizing: border-box;
-    filter: hue-rotate(
--25deg
-) grayscale(1) saturate(1.5) contrast(1.1) brightness(1.5);
-}
+
 
 :host .parties-status-card-body .parties-status-card-map {
     width: 34px;
