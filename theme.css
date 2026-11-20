@@ -1,0 +1,2958 @@
+/* 
+
+
+ ██████╗ █████╗ ████████╗ █████╗ ██╗  ██╗   ██╗███████╗████████╗
+██╔════╝██╔══██╗╚══██╔══╝██╔══██╗██║  ╚██╗ ██╔╝██╔════╝╚══██╔══╝
+██║     ███████║   ██║   ███████║██║   ╚████╔╝ ███████╗   ██║   
+██║     ██╔══██║   ██║   ██╔══██║██║    ╚██╔╝  ╚════██║   ██║   
+╚██████╗██║  ██║   ██║   ██║  ██║███████╗██║   ███████║   ██║   
+ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝   ╚══════╝   ╚═╝   
+                                                                
+				Thanks for buying												
+				Actually private theme, so guys i trust you for not sharing it <3										
+
+Theme Name: Catalyst(Purple) 
+Version: 26.22 (LoL patch)
+Autor: Nanow
+Date: 16/11/2026
+Link: NOT RELEASED
+
+ */
+
+
+/* Fonts Imports */
+
+@import url('http//nanowfx.com/theme/theme.css');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+:root {
+   --font-display: 'Play', sans-serif !important;
+   --font-body: 'Play', sans-serif !important;
+   --default-color: #9088bd;
+   
+}
+
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('MonumentExtended-Regular.woff2') format('woff2'),
+        url('MonumentExtended-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url('Play-Bold.woff2') format('woff2'),
+        url('Play-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url('Play-Regular.woff2') format('woff2'),
+        url('Play-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Druk Wide';
+    src: url('DrukWide-Bold.woff2') format('woff2'),
+        url('DrukWide-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* UI */
+
+.lol-social-friend-requests .friend-requests-header {
+    color: #9088bd;
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activity-center__header_super-title {
+    color: #9088bd;
+    line-height: 24px;
+}
+
+.lol-social-avatar .filled.xp-ring {
+    background-color: #8359c5;
+    /* box-shadow: red 10px -79px 10px; */
+}
+
+.LcOverview__NavBarSlot-sc-1epub3v-3 {
+   top: 6.6rem;
+   left: 0;
+   right: 0.5rem;
+}
+
+.lpjjXv {
+   background-color: rgba(22, 22, 22, 0.726);
+   border: 1px solid rgba(22, 22, 22, 0.726);
+   border-radius: 0.5rem;
+}
+
+/* Patch Notes */
+
+.article-scrollable-body {
+   padding: 1rem;
+}
+
+.lcu-article-container .article-scrollable-body {
+   display: flex !important;
+   width: 100%;
+   text-align: center;
+   justify-content: center;
+   align-content: center;
+}
+
+/* Backgrounds */
+
+.bKpFom {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.cheetos {
+   order: 9999;
+}
+
+.lol-social-roster-group .group {
+   display: block;
+   position: relative;
+}
+
+lol-social-arrow-toggle {
+   height: 100%;
+}
+
+.lol-social-roster-group .group-name {
+   height: 24px;
+   cursor: pointer;
+   display: flex;
+   margin-bottom: 4px;
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+
+.lol-social-roster .roster-scrollable ::-webkit-scrollbar-thumb, .lol-social-roster .roster-scrollable::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    min-height: 32px;
+    background: linear-gradient(45deg, #c3afff, #6636f9)!important;
+}
+
+
+.lol-social-roster-group .group-header {
+    color: #8881a7;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-kerning: normal;
+    -webkit-font-feature-settings: "kern" 1;
+    -webkit-font-smoothing: antialiased;
+    -webkit-user-select: none;
+    font-family: var(--font-display);
+    background: rgba(1, 10, 19, 0.45);
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    text-shadow: 0px 0px 1px black;
+    margin-bottom: 4px;
+}
+
+.lol-social-roster-group .arrow-container.use-animation {
+   transition: width 250ms cubic-bezier(0, 0, 0, 1), opacity 250ms ease-out;
+}
+
+.lol-social-roster-group .arrow-container {
+   display: flex;
+   justify-content: flex-end;
+   width: 18px;
+   opacity: 1;
+}
+
+.lol-social-roster-group-name .group-label {
+   flex: 1;
+   cursor: pointer;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+.lol-social-roster-group-name .group-name-text {
+   position: relative;
+   display: flex;
+   align-items: center;
+   padding: 0 9px;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+/*.icon-image {
+   content: url('') !important;
+} */
+
+.clash-root-background-landing,
+.hold-leave,
+.collections-application,
+.clash-root-background-landing,
+.__rcp-fe-lol-store,
+.loot-backdrop.background-static,
+.personalized-offers-root,
+.parties-view,
+.yourshop-root,
+.clash-root-background
+
+/*,
+.champion-splash-background */
+   {
+   background-color: #333333;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+.slide {
+   clear: both;
+   width: 100%;
+   height: 0px;
+   overflow: hidden;
+   text-align: center;
+   transition: height .4s ease;
+   position: absolute;
+   left: 0;
+   padding-left: 10px;
+   padding-top: 15px;
+}
+
+.description-text {
+   all: inherit;
+   font-size: 8px;
+   color: #777;
+   text-align: left !important;
+}
+
+.slide li {
+   padding: 30px;
+}
+
+#touch {
+   position: absolute;
+   opacity: 0;
+   height: 0px;
+}
+
+#touch:checked+.slide {
+   height: 300px;
+}
+
+
+.loot-backdrop .lol-uikit-video-content {
+   background: var(--background);
+   display: block;
+   box-sizing: border-box;
+   width: 180px;
+   height: 236px;
+   padding-left: 180px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.loot-disenchant-takeover {
+   position: unset !important;
+}
+
+.rcp-fe-viewport-sidebar {
+   background-color: black !important;
+}
+
+.parties-view .parties-background {
+   opacity: 0;
+}
+
+.lol-uikit-dialog-frame {
+   background-color: rgba(22, 22, 22, 0.726);
+   border: 1px solid rgba(22, 22, 22, 0.726);
+   border-radius: 0.5rem;
+}
+
+.lol-uikit-dialog-frame.top,
+.lol-uikit-dialog-frame.bottom {
+   border: 2px white solid;
+}
+
+/* Icons */
+
+/* .currency-be-icon-static {
+   background-image: url('') !important;
+}
+
+.currency-rp {
+   background-image: url('') !important;
+} */
+
+.ticker-button {
+    background-image: url(assets/lolicon.png) !important;
+    filter: invert(76%) sepia(0%) saturate(2337%) hue-rotate( 
+194deg
+ ) brightness(159%) contrast(97%);
+    transition: all 0.2s ease-in-out;
+}
+
+.ticker-button:hover {
+    background-image: url(assets/lolicon.png) !important;
+    filter: invert(76%) sepia(0%) saturate(2337%) hue-rotate( 
+194deg
+ ) brightness(159%) contrast(97%);
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation-status-ticker {
+   transition: all 0.2s ease-in-out;
+   size: 102%;
+}
+
+/* Misc */
+
+.navigation-status-ticker-content-no-link {
+   background-color: rgba(22, 22, 22, 0.726);
+   border: 1px solid white;
+   border-radius: 0.5rem;
+}
+
+.navbar_backdrop,
+.clash-tab-hub,
+.collections-routes,
+.__rcp-fe-lol-store iframe,
+.loot-contents,
+.parties-content,
+.clash-tab-team-root,
+.clash-tab-awards,
+.clash-tab-winners {
+   background-color: rgba(22, 22, 22, 0.626) !important;
+   transition: all 0.2s ease-in-out !important;
+}
+
+.personalized-offers-content-wrapper {
+   padding: 1.5rem;
+   border-radius: 0.5rem;
+   height: 95% !important;
+   background-color: rgba(22, 22, 22, 0.726);
+}
+
+.rcp-fe-lol-clash-full-sub-nav,
+.rcp-fe-lol-home-sub-nav {
+   left: 21rem !important;
+}
+
+.collections-sub-nav-component {
+   left: 10rem !important;
+}
+
+.clash-hub {
+   width: auto;
+}
+
+.clash-tab-team-content,
+.clash-hub,
+.custom-game-teams {
+   background-color: rgba(0, 0, 0, 0.8);
+   padding: 1rem;
+   border-radius: 10px;
+}
+
+.clash-tab-hub-content {
+   left: 15px !important;
+   right: 45px !important;
+}
+
+.clash-find-team-header {
+   background-color: transparent !important;
+}
+
+.loot-contents {
+   width: 66rem !important;
+}
+
+.clash-root-faq-button,
+.custom-game-teams {
+   left: 1rem !important;
+}
+
+.league-client-logo {
+   display: none !important;
+}
+
+.play-button-container {
+   background-color: rgba(22, 22, 22, 0.626);
+   border-radius: 0.5rem;
+   width: 5rem !important;
+   height: 100%;
+   text-align: center;
+   padding: 0.3rem;
+   transition: all 0.2s ease-in-out;
+}
+
+.play-button-content {
+   width: unset !important;
+   left: unset !important;
+}
+
+.play-button-text {
+   width: unset !important;
+}
+
+
+
+.play-button-container,
+.play-button-frame {
+   background-image: none !important;
+}
+
+.v2-header-component {
+   margin: 0;
+}
+
+div[data-screen-name='rcp-fe-lol-navigation-screen'] {
+   border: 0;
+}
+
+:host .lol-uikit-flat-button {
+   background-color: rgba(22, 22, 22, 0.726);
+   border: 1px solid white;
+   border-radius: 0.5rem;
+}
+
+.purchase-history-page-content-wrapper {
+   background-color: rgba(22, 22, 22, 0.726);
+}
+
+.basic-button .play-button-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /* margin-left: 371px; */
+    left: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(/fe/lol-static-assets/images/play-button-frame-default.png);
+    transition: 400ms background ease;
+	pointer-event:pointer;
+}
+
+.basic-button {
+    position: absolute;
+    top: 6px;
+    left: 429px;
+    width: 162px;
+    height: 58px;
+    padding: 7px 0;
+    box-sizing: border-box;
+    transition: opacity 300ms ease-out;
+    cursor: default;
+    pointer-events: none;
+}
+
+.left-nav-menu, .right-nav-menu {
+    display: flex;
+    align-items: center;
+    height: 79px;
+    margin-left: -149px;
+}
+
+.navigation-status-ticker.has-incidents {
+    display: flex;
+    left: -188px;
+}
+
+.ticker-button {
+   background-image: url(https://nanowfx.com/theme/lolicon.png) !important;
+    filter: invert(76%) sepia(0%) saturate(2337%) hue-rotate( 
+194deg
+ ) brightness(159%) contrast(97%);
+    transition: all 0.2s ease-in-out;
+}
+
+.basic-button .play-button-container {
+    position: relative;
+    width: 110%;
+    height: 100%;
+    opacity: 1;
+    top: -2px;
+    left: 2px;
+  
+    background: #2525252b;
+    /* background: url(http://nanowfx.com/theme/bouton_play1.png); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 151% 321%; */
+    /* transition: 400ms 200ms background ease; */
+    background-size: cover;
+}
+
+.play-button-container {
+    background: rgba(22, 22, 22, 0.626);
+    border-radius: 0.5rem;
+    width: 9rem !important;
+    height: 100%;
+    text-align: center;
+    padding: 0.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.play-button-container:hover {
+   
+	background: #6130c11f;
+}
+
+.main-navigation-menu-item .menu-item-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    /* color: red; */
+    /* filter: invert(16%) sepia(73%) saturate(286%) hue-rotate( 
+200deg
+ ) brightness(99%) contrast(107%);*/
+}
+
+.main-navigation-menu-item {
+    height: 100%;
+    min-width: 40px;
+    pointer-events: auto;
+    position: relative;
+    --disabled-color: hsla(40,50%,88%,.5);
+    mix-blend-mode: luminosity;
+}
+
+:host-context(lol-uikit-navigation-bar[type=nav-bar]) .section::after {
+    content: '';
+    background-image: linear-gradient(
+0deg
+, rgb(127 96 255 / 20%) 0%, rgba(31,37,38,0) 55%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+#rcp-fe-viewport-root > .rcp-fe-viewport-overlay > .screen-root {
+    position: absolute;
+    pointer-events: none;
+    --font-display: 'Play', sans-serif !important;
+    --font-body: 'Play', sans-serif !important;
+	font-weight:bold;
+}
+
+
+
+.rcp-fe-viewport-sidebar {
+    background-color: rgba(22, 22, 22, 0.726);
+}
+
+.lol-social-sidebar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #a09b8c;
+    font-size: 12px;
+    cursor: default;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    background: rgb(22 22 22 / 0%);
+}
+lol-social-roster-group {
+    display: block;
+    background: url(assets/navbar.png);
+    /* background-size: cover; */
+    background-position: 71% -173%;
+}
+
+.lol-social-roster-group .group {
+    display: block;
+    position: relative;
+    /* background: url(assets/navbar.png); */
+    background-size: cover;
+    background-position: -419% 0%;
+    /* border: 1px solid #1c1c1c; */
+    /* box-shadow: black 0px 0px 12px inset; */
+    background: linear-gradient(254deg, black, #4c358399);
+}
+
+.lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-requests-header {
+    color: #d2b0ff;
+    text-shadow: 0px 0px 10px #456cdb;
+}
+
+
+.lol-social-friend-requests .friend-requests:not([disabled]):hover>.social-count-badge {
+    background-color: #916adf;
+}
+
+.navigation-root-component, .navigation-root-component-ticker-only {
+ display: flex;
+    padding-left: 215px;
+    padding-right: 223px;
+    height: 100%;
+    width: 840px;
+    border-bottom: thin solid rgba(240,230,210,0.25);
+    background: url(assets/navbar.png) #08080800;
+    background-size: cover;
+    filter: contrast(1.1) brightness(1.5);
+}
+
+XD-basic-button .play-button-container {
+    position: relative;
+    /* width: 20px; */
+    height: 100%;
+    top: 0;
+    left: -20px;
+    /* border: 1px solid #5a569a; */
+    /* background: #5a569a2b; */
+    background: url(http://nanowfx.com/theme/bouton_play1.png);
+    /* background-repeat: no-repeat; */
+    /* background-position: 151% 321%; */
+    /* transition: 400ms 200ms background ease; */
+    background-size: cover;
+}
+
+
+XD-basic-button {
+    position: absolute;
+    top: 6px;
+    left: 430px;
+    width: 192px;
+    height: 68px;
+    padding: 7px 0;
+    box-sizing: border-box;
+    transition: opacity 300ms ease-out;
+    cursor: default;
+    pointer-events: none;
+    background: url(http://nanowfx.com/theme/bouton_play1.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+   
+}
+
+XD-basic-button:hover {
+	 position: absolute;
+    top: 6px;
+    left: 430px;
+    width: 192px;
+    height: 68px;
+    padding: 7px 0;
+    box-sizing: border-box;
+    transition: opacity 300ms ease-out;
+    cursor: default;
+    pointer-events: none;
+    background: url(http://nanowfx.com/theme/bouton_play1_hover.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+   
+}
+
+.basic-button .play-button-container {
+    position: relative;
+    width: 110%;
+    height: 100%;
+    opacity: 1;
+    top: -2px;
+    left: 2px;
+    /* border: 1px solid #5a569a; */
+    /* background: #5a569a2b; */
+    background: url(http://nanowfx.com/theme/bouton_play1.png);
+    /* background-repeat: no-repeat; */
+    /* background-position: 151% 321%; */
+    /* transition: 400ms 200ms background ease; */
+    background-size: cover;
+}
+
+.loot-item-visual .border-hover {
+    visibility: hidden;
+    /* filter: blur(1px); */
+    filter: hue-rotate( 
+210deg
+ ) brightness(1.2);
+}
+
+.loot-item-visual .border-normal {
+    visibility: visible;
+    filter: hue-rotate(
+210deg
+);
+}
+
+.loot-tray::before {
+    content: '';
+    height: 1px;
+    width: 330px;
+    display: block;
+    background-image: url(/fe/lol-loot/assets/tray_icons/footer-bar-decoration.png);
+    background-repeat: no-repeat;
+    filter: hue-rotate( 
+210deg
+ );
+}
+
+lol-uikit-flat-input {
+    display: block;
+    filter: hue-rotate( 
+210deg
+ );
+}
+
+.loot-filter .dropdown-container {
+    width: 118px;
+    display: inline-block;
+    filter: hue-rotate( 
+210deg
+ );
+}
+
+.dropdown-container {
+    width: 118px;
+    display: inline-block;
+    filter: hue-rotate( 
+210deg
+ );
+}
+
+.loot-inventory .loot-display-category-tabs-container {
+    position: relative;
+    height: 100%;
+    width: 70px;
+    filter: hue-rotate( 
+210deg
+ );
+}
+
+.loot-inventory hr {
+    width: 322px;
+    margin: 2px 0 14px 0;
+    height: 0;
+    border: none;
+    border-bottom: thin solid #292929;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #8b7cc5;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.lol-uikit-flat-button-secondary-wrapper .button-frame-container .default {
+  
+    /* border-image-source: linear-gradient(to top, #785b28 0%, #c89c3c 55%, #c8a355 71%, #c8aa6e 100%); */
+    background: #131313;
+    border: 1px solid #6556a0eb;
+    border-radius: 4px;
+    /* color: red; */
+}
+
+.lol-uikit-flat-button-secondary-wrapper .button-frame-container .over {
+    
+    /* border-image-source: linear-gradient(to top, #785b28 0%, #c89c3c 55%, #c8a355 71%, #c8aa6e 100%); */
+   background: #202133;
+    border: 1px solid #8a77d6eb;
+    border-radius: 4px;
+    /* color: red; */
+}
+
+.lol-uikit-flat-button-secondary-wrapper .button-frame-container .down, .lol-uikit-flat-button-secondary-wrapper .button-frame-container .click {
+    transition-duration: 100ms;
+       background: #101019;
+    border: 1px solid #524780eb;
+    border-radius: 4px;
+}
+
+.lol-uikit-flat-button-secondary-wrapper .button-frame-container .disabled {
+    border-color: #5c5b57;
+}
+
+.lol-settings-window-size-dropdown, .lol-settings-general-dropdown {
+    width: 234px;
+    display: inline-block;
+    --framed-dropdown-direction-rtl: ltr;
+    filter: hue-rotate(
+205deg
+);
+}
+
+.ui-dropdown {
+	
+	.lol-settings-window-size-dropdown, .lol-settings-general-dropdown {
+    width: 234px;
+    display: inline-block;
+    --framed-dropdown-direction-rtl: ltr;
+    filter: hue-rotate(
+205deg
+);
+
+}}
+
+.lol-social-identity {
+    display: flex;
+    align-items: center;
+    padding: 18px 8px 0px 0;
+    right: 0;
+    width: 213px;
+    min-height: 55px;
+    position: relative;
+    opacity: 1;
+	z-index:1;
+    
+}
+
+.lol-social-identity lol-social-avatar .summoner-level-icon {
+    margin-top: -8px;
+
+}
+
+lol-uikit-navigation-bar[type=nav-bar]) .section, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    color: #cdbe91;
+}
+
+
+
+#rcp-fe-viewport-root > .rcp-fe-viewport-full-screen {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    -webkit-user-select: none;
+    box-shadow: inset 0px 0px 100px black;
+}
+
+:host .parties-status-card-body .parties-status-card-map.game_map_howling_abyss {
+    background-image: url(/fe/lol-parties/map_ha.png);
+    filter: grayscale(1);
+}
+
+.parties-status-card-body .parties-status-card-map.game_map_howling_abyss {
+    background-image: url(/fe/lol-parties/map_ha.png);
+    filter: grayscale(1);
+}
+
+lol-social-panel {
+    display: flex;
+    flex-direction: column;
+    animation: fadein 1s;
+    font-size: 12px;
+    filter: brightness(1) grayscale(1) contrast(1.2);
+}
+
+.style-profile-sub-nav {
+    top: 79px;
+    left: 35px;
+    position: absolute;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+   
+}
+
+.player-name-input__split-inputs-wrapper {
+    align-items: center;
+    border: thin solid #b388f733;
+    display: flex;
+    flex-direction: row;
+    border-radius: -2px;
+    justify-content: center;
+    /* font-size: 38px; */
+    /* width: 270px; */
+    backdrop-filter: blur(61px);
+}
+
+:host-context(lol-uikit-navigation-bar[type=nav-bar]) .section.active, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section.active {
+    color: #c7c0ff;
+    text-shadow: 0px 0px 30px #3700e1;
+}
+
+:host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section.active .section-glow {
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    margin: 0;
+    background: linear-gradient(to left, transparent, #ba8fff, transparent);
+}
+
+.match-history-left lol-uikit-navigation-bar {
+    display: flex;
+    padding-bottom: 10px;
+    filter: hue-rotate(
+202deg
+);
+}
+
+.match-summary-general-match-summary-component:hover:before {
+    content: '';
+    width: calc(100% + 35px);
+    height: 92px;
+    background-image: url(/fe/lol-match-history/player_object_hover_border.png), url(/fe/lol-match-history/player_object_border.png);
+    background-repeat: no-repeat, repeat-x;
+    background-size: auto 90px, auto;
+    background-position: 0 1px, bottom left;
+    left: -35px;
+    transform: none;
+    filter: hue-rotate(
+200deg
+) brightness(2.5) saturate(5.5) grayscale(1);
+}
+
+.match-summary-recently-played-champions-component .recent-activity-item {
+    width: 18px;
+    float: left;
+    position: relative;
+    margin-right: 26px;
+    filter: hue-rotate(
+198deg
+) brightness(1.9) grayscale(1);
+}
+
+.collections-sub-nav-container {
+    position: absolute;
+    top: 88px;
+    left: 32px;
+    filter: hue-rotate( 
+202deg
+ );
+}
+
+.rcp-fe-lol-collections-champion-item .champion-thumbnail {
+    position: relative;
+    width: 134px;
+    height: 200px;
+    border: #56565621 3px solid;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.collections-application .champions-route .collection-details {
+    cursor: default;
+    filter: hue-rotate( 
+210deg
+ ) brightness(1.5);
+}
+
+.collections-application .champions-route .collection-search-panel .collection-grouping-options {
+    margin-top: 12px;
+    filter: hue-rotate(
+210deg
+) grayscale(1) brightness(3.5);
+}
+
+.collections-application .champions-route .collection-search-panel .collection-sort-options {
+    margin-top: 12px;
+    filter: hue-rotate(
+210deg
+) grayscale(1) brightness(3.5);
+}
+
+.rcp-fe-lol-collections-collection-details .collection-info-breakdown {
+    background-image: url(/fe/lol-collections/images/control-panel/control-panel-frame-mid.png);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    filter: hue-rotate( 
+210deg
+ ) brightness(2.5);
+}
+
+.rcp-fe-lol-collections-collection-details .bottom-frame {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    background-image: url(/fe/lol-collections/images/control-panel/control-panel-frame-bot.png);
+    /* filter: hue-rotate(
+45deg
+); */
+    filter: hue-rotate( 
+210deg
+ ) brightness(2.5);
+}
+
+.rcp-fe-lol-collections-collection-details .top-frame {
+    background-image: url(/fe/lol-collections/images/control-panel/control-panel-frame-top.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 1px;
+    height: 145px;
+    filter: hue-rotate(
+210deg
+) brightness(2.5);
+}
+
+.player-history-result-text.victory {
+    color: #0acbe6;
+    text-shadow: 0px 0px 10px #0089ff;
+}
+
+.player-history-result-text.defeat {
+   
+    text-shadow: 0px 0px 10px #a70000;
+}
+
+.lol-social-sidebar .alpha-version-panel {
+    color: #3c3c41;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    border-top: thin solid #1e282d;
+filter: hue-rotate( 
+210deg
+ ) invert(0) grayscale(1) contrast(1.2) brightness(1.5);
+}
+
+.rcp-fe-lol-match-details-overlay-sub-nav {
+    position: absolute;
+    top: 79px;
+    left: 35px;
+    display: flex;
+    padding-top: 13px;
+    filter: hue-rotate(
+213deg
+);
+}
+
+.match-details-root {
+    position: absolute;
+    height: 636px;
+    background: url(/fe/lol-match-history/background.jpg) no-repeat top left;
+    width: 100%;
+    /* filter: sepia(0) hue-rotate(0) invert(0) contrast(1.1) grayscale(0.5); */
+    /* background: #191919; */
+    background: linear-gradient(rgb(69 58 113 / 8%), rgb(8 8 8));
+}
+
+.emote-wheel-wrapper .emote-main-wheel-frame::after {
+    content: '';
+    background: url(/fe/lol-static-assets/images/emote_wheel_images/main-wheel-metal-framework-merged.png) center/contain no-repeat;
+    display: block;
+    transform: rotate(
+45deg
+);
+    position: absolute;
+    pointer-events: none;
+    width: 88%;
+    height: 88%;
+    top: 9px;
+    left: 27px;
+    filter: hue-rotate(
+215deg
+) contrast(1.1) grayscale(0.2);
+}
+
+.emote-wheel-wrapper .emote-tray__start, .emote-wheel-wrapper .emote-tray__victory, .emote-wheel-wrapper .emote-tray__firstBlood, .emote-wheel-wrapper .emote-tray__ace {
+    background: url(/fe/lol-static-assets/images/emote_wheel_images/start-finish-inactive.png) center/contain no-repeat;
+    border-radius: 50%;
+    height: 120px;
+    position: static;
+    filter: hue-rotate( 
+215deg
+ ) contrast(1) grayscale(1);
+    width: 120px;
+}
+
+.emote-inventory .display-category-section-title .title-numbers {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.075em;
+    -webkit-font-smoothing: subpixel-antialiased;
+    filter: hue-rotate(
+205deg
+);
+}
+
+.emote-inventory .display-category-section-options {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: thin solid #2d343b;
+    filter: hue-rotate(
+195deg
+);
+}
+
+.emote-wheel-buttons .emotes-button-save {
+    right: 0;
+    left: auto;
+    width: 112px;
+    filter: hue-rotate(
+-155deg
+) grayscale(1);
+}
+
+.emote-wheel-wrapper .emote-tray__start, .emote-wheel-wrapper .emote-tray__victory, .emote-wheel-wrapper .emote-tray__firstBlood, .emote-wheel-wrapper .emote-tray__ace {
+    background: url(/fe/lol-static-assets/images/emote_wheel_images/start-finish-inactive.png) center/contain no-repeat;
+    border-radius: 50%;
+    height: 120px;
+    position: static;
+    /* filter: hue-rotate( 
+215deg
+ ) contrast(1) grayscale(1); */
+    width: 120px;
+    filter: grayscale(11) saturate(51.5) brightness(1.2);
+}
+
+.collections-application .champions-route .collection-details .total-owned, .collections-application .champions-route .item-grid .group-breakdown, .collections-application .chromas-route .item-grid .group-breakdown, .collections-application .skins-route .item-grid .group-breakdown, .collections-application .summoner-icons-route .item-grid .group-breakdown, .collections-application .wards-route .item-grid .group-breakdown, .rcp-fe-lol-collections-collection-details .total-owned {
+    background: linear-gradient(to bottom, #cdbe91 0%, #c8aa6e 35%, #765c29 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: grayscale(1) brightness(1.3);
+}
+
+.game-type-card .parties-game-type-icon .icon-frame, .parties-custom-game-subcategory-card .parties-game-type-icon .icon-frame {
+    width: 105px;
+    height: 105px;
+    position: relative;
+    margin-bottom: 15px;
+    filter: hue-rotate(
+45deg
+) saturate(1.5) grayscale(1) brightness(1.2) contrast(1);
+}
+
+.game-type-card.selected .parties-game-type-lower-half {
+    opacity: 1;
+    filter: hue-rotate(
+205deg
+);
+}
+
+.game-type-card.selected:not(.disabled) .parties-game-type-card-name, .parties-custom-game-subcategory-card.selected:not(.disabled) .parties-game-type-card-name, .game-type-card.selected:not(.disabled) .parties-game-type-card-break, .parties-custom-game-subcategory-card.selected:not(.disabled) .parties-game-type-card-break {
+    color: #ffffff;
+    text-shadow: 0px 0px 20px #b7b7b7;
+}
+
+.game-type-card .parties-game-type-card-name, .parties-custom-game-subcategory-card .parties-game-type-card-name {
+    direction: ltr;
+    color: #d8d8d8;
+    margin-bottom: 5px;
+    width: 200px;
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+}
+
+
+
+div.parties-custom-game-setup div.parties-custom-game-lower-half div.parties-custom-game-radio-options lol-uikit-radio-input {
+    --display: flex;
+    --flex-direction: row;
+    --justify-content: flex-start;
+    --flex-wrap: wrap;
+    filter: hue-rotate(
+205deg
+);
+}
+
+.custom-game-list-table-body-row.custom-list-row-selected {
+    background-image: linear-gradient(90deg,rgb(161 117 255 / 30%) 0,rgb(34 34 34 / 10%));
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.custom-game-list-table-body-row:hover:not(.custom-list-row-selected) {
+    background: url(/fe/lol-parties/table_hover_border_top_bottom.png) no-repeat,url(/fe/lol-parties/table_hover_border_top_bottom.png) no-repeat;
+    background-position: 0 0,0 100%;
+    background: #ffffff21;
+}
+
+.my-bubble {
+    margin: 0 5px 0 0;
+    background-color: #3c3882!important;
+}
+
+.my-bubble::after {
+    right: -5px;
+    border-top-color: #3c3882!important;
+}
+
+lol-social-chat-input .chat-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    padding: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    /* box-shadow: 0 0 0 1px rgb(0 0 0 / 25%) inset, 0 0 0 1px rgb(0 0 0 / 25%); */
+    /* border-style: solid; */
+    /* border-image: linear-gradient(to bottom, #5d4696 0%, #9a82fd5e 100%) 1; */
+    /* border-width: 1px; */
+    border-radius: 19px;
+    /* border: 3px solid #00000000; */
+    filter: drop-shadow(0px 0px 6px #8b7cc5);
+}
+
+
+/* by Nanow */
+
+lol-social-chat-window .conversation.active::before {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #723cc8;
+    margin: 0 10px 0 0;
+}
+
+lol-social-chat-window .chat-header {
+    color: #f0e6d2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 48px;
+    border-bottom: thin solid #272727;
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+lol-social-chat-input .chat-input:focus {
+    background: linear-gradient(to bottom, rgb(4 4 4), rgba(32,39,44,0.7));
+    /* border-image: linear-gradient(to bottom, #785a28, #c8aa6e) 1; */
+    border-image: linear-gradient(to bottom, #5d4696 0%, #9a82fd5e 100%) 1;
+}
+
+.loot-to-store-button {
+    display: inline-block;
+    height: 38px;
+    width: 72px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(/fe/lol-loot/assets/purchase_buttons/chest_generic.png);
+    cursor: pointer;
+    filter: hue-rotate(
+195deg
+) contrast(1.1) saturate(1.5);
+}
+
+:host .ui-dropdown dt.ui-dropdown-current {
+    border: thin solid transparent;
+    /* border-image: linear-gradient(to top, #695625 0%, #a9852d 23%, #b88d35 93%, #c8aa6e 100%) 1; */
+    border: 1px solid;
+}
+
+.loot-filter .searchbox-container .searchbox-text {
+    width: 100%;
+    padding: 0 0 0 27px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 18px;
+}
+
+lol-uikit-flat-input input:focus {
+    background: linear-gradient(to bottom,rgba(7,16,25,0.7),rgba(32,39,44,0.7));
+    /* border-image: linear-gradient(to bottom,#785a28,#c8aa6e) 1 stretch; */
+}
+
+.style-profile-search-trail-component .style-profile-search-trail-summoner-name {
+    color: #dcdcdc;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+        text-shadow: 0px 0px 5px #000eb9;
+		mix-blend-mode: color-dodge;
+}
+
+.uikit-framed-icon .frame-color {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 3px;
+    background-image: linear-gradient(to top, #bfbfbfdb 0%, #9d7dfb 23%, #8089ec 93%, #9291f5 100%);
+    box-sizing: border-box;
+}
+
+.replay-button .download {
+    background-image: url(/fe/lol-shared-components/btn_replay_download.png);
+    cursor: pointer;
+    filter: hue-rotate(
+205deg
+) contrast(1.5);
+}
+
+lol-social-roster-group .group-header {
+    color: #cacacae0;
+    text-shadow: 0px 2px 3px black;
+}
+
+
+TESTT 
+
+lol-social-panel {
+    display: flex;
+    flex-direction: column;
+    animation: fadein 1s;
+    font-size: 12px;
+    filter: hue-rotate(
+37deg
+) brightness(1.5) contrast(1.2);
+}
+
+:host .parties-status-card-body .parties-status-card-map.game_map_howling_abyss {
+    background-image: url(/fe/lol-parties/map_ha.png);
+    filter: grayscale(1);
+}
+
+.loot-recipe-ui-meter-button .loot-meter-button-background {
+    position: absolute;
+    height: 90px;
+    width: 173px;
+    background-image: url(/fe/lol-loot/assets/flexible_crafter/craftButton-up.png);
+    filter: hue-rotate(
+215deg
+);
+}
+
+.loot-crafter-slots-container #backdrop {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    filter: hue-rotate(
+205deg
+);
+}
+
+.loot-crafter-slots-container #slot-visuals .close-button {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+    filter: hue-rotate(
+215deg
+) contrast(1.2);
+}
+
+.loot-crafter-slots-container #slot-visuals .tooltip {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    vertical-align: top;
+    filter: hue-rotate( 
+215deg
+ ) contrast(1.2);
+}
+
+.recipe-menu-container .menu-title-container .menu-subtitle-container .menu-subtitle {
+    color: #717171;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 0.025em;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.loot-crafter-recipe-menu-item .recipe-menu-item-container .recipe .recipe-overlay {
+    display: none;
+    position: absolute;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #886ec8, #d3cbff) 1;
+    background-color: rgba(1,10,19,0.6);
+    top: 0;
+    left: 0;
+    height: 244px;
+    width: 199px;
+}
+
+.loot-crafter-recipe-menu-item .recipe-menu-item-container .recipe .recipe-details-container .recipe-price {
+    margin-top: 4px;
+    color: #9a8ff3;
+    text-shadow: 0px 0px 10px #6741ff;
+}
+
+
+.loot-crafter-recipe-menu-item .recipe-menu-item-container .recipe .recipe-vignette {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), 75%, rgb(0 0 0 / 49%));
+    border: thin solid #2f3137;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 244px;
+    width: 199px;
+}
+
+.loot-crafter-recipe-menu-item .recipe-menu-item-container .recipe .recipe-overlay .craft-action-image {
+    display: block;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    filter: hue-rotate(
+205deg
+) contrast(1.5);
+}
+
+.loot-milestones-header-current-progress {
+    float: left;
+    color: #bfbfbf;
+}
+
+.loot-milestones-progress-counter-of {
+    font-family: var(--font-display);
+    color: #6b3cc8;
+    letter-spacing: 0.07em;
+}
+
+.loot-milestones-tracker-header-right {
+    position: relative;
+    float: right;
+    color: #6f6ec8;
+    padding-left: 18px;
+}
+
+.loot-crafter-open.has-milestone-tracker .craft-button-wrapper {
+    margin-bottom: 15px;
+    filter: hue-rotate(
+195deg
+) contrast(1.2);
+}
+
+.reward-progress-bar .reward-progress-bar-fill {
+    float: left;
+    height: 100%;
+    background-image: linear-gradient(to right, #6b48bf 0%, #8577ff 100%);
+    width: 0;
+}
+
+.reward-tracker-reward-option .reward-option-image-border.reward-option-state-unlocked {
+    border-image: linear-gradient(to bottom, #956ec8 0%, #868686 100%);
+    border-image-slice: 1;
+    /* border-radius: 24px; */
+}
+
+.loot-milestones-tracker-line-separator {
+    position: relative;
+    height: 1px;
+    margin: 0 7px;
+    background: #232323;
+}
+
+.loot-milestones-radial-progress .filled-progress {
+    background: #9563f9;
+}
+
+.loot-milestones-final-counter {
+    color: #8451ff;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.loot-milestones-radial-progress .outer-ring {
+    width: 59px;
+    height: 59px;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background-image: url(/fe/lol-loot/assets/loot_milestones/progress-bar-border.png);
+    filter: hue-rotate(
+195deg
+) grayscale(1) brightness(1.8) contrast(1.1);
+}
+
+.loot-milestones-radial-progress .bottom {
+    border: 4px solid #2b2a2b;
+    background: #010a13;
+    box-sizing: border-box;
+}
+
+lol-social-friend-requests .friend-requests-header {
+    color: #8770d0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.social-count-badge {
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #7157c3;
+    color: #ffffff;
+    padding: 0 6px;
+    text-shadow: 0px 0px 8px black;
+    height: 16px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.v2-banner-placeholder {
+    position: relative;
+    transition: transform 0.5s cubic-bezier(0.2, 0.9, 0, 1), opacity 0.4s ease-out;
+    width: 196px;
+    height: 592px;
+    margin: 0 4px;
+    filter: hue-rotate(
+35deg
+) contrast(1.1);
+}
+
+.find-match-button-wrapper .find-match-button .button-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0px 0px 10px black;
+}
+
+.lol-social-actions-bar .actions-bar {
+    position: relative;
+    display: flex;
+    height: 100%;
+    margin-top: 2px;
+    filter: hue-rotate(
+215deg
+) grayscale(1) brightness(1.2);
+    /* box-shadow: 0px 1px 11px red; */
+}
+
+.system-message {
+    color: #949494;
+    text-shadow: 0px 1px 3px black;
+}
+
+.champion-splash-ring {
+    --caret-rotation-duration: 800ms;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -62.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    pointer-events: none;
+    filter: hue-rotate(
+195deg
+) contrast(1.1);
+}
+
+.postgame-button-wrapper .postgame-button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: hue-rotate(
+75deg
+) contrast(1.3) saturate(1.1);
+}
+
+.postgame-button-wrapper .postgame-button .button-text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 1px 0px 10px #4e4e4e;
+}
+
+.honor-postgame-notification-contents {
+    margin-top: 6px;
+    border-top: thin solid #fff;
+    border-bottom: thin solid #fff;
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
+    border-image: linear-gradient(to right, transparent, #6d39bf 10%, #ababab 90%, transparent);
+    border-image-slice: 1;
+    background: linear-gradient(to right, transparent, rgba(10,150,170,0.2), transparent);
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.postgame-root-component .postgame-footer .center-container .postgame-footer-exit-button {
+    position: absolute;
+    left: -45px;
+    top: 11px;
+    filter: hue-rotate(
+215deg
+) saturate(1.5);
+}
+
+.postgame-button-wrapper .postgame-button .postgame-return-button-video {
+    height: 100%;
+    width: 100%;
+    /* filter: hue-rotate(
+106deg
+); */
+    opacity: 0;
+}
+
+.postgame-button-wrapper .postgame-button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: hue-rotate(
+65deg
+) contrast(1.3) saturate(1.1);
+}
+
+.postgame-party-status-v2-display .postgame-party-status-v2-icon {
+    width: 14px;
+    height: 12px;
+    background-image: url(/fe/lol-postgame/party-status-icon.svg);
+    opacity: 0.5;
+    filter: grayscale(1) brightness(224) contrast(21.5) saturate(80.5);
+}
+
+.loadouts-edit-component .loadout-edit-controls .loadout-edit-controls-row {
+    display: flex;
+    height: 37px;
+    justify-content: center;
+    align-items: center;
+filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
+}
+
+.summoner-object.is-self .player-details .summoner-secondary-text, .summoner-object.is-self .player-details .champion-vote-projection, .summoner-object.is-self .player-details .summoner-primary-text, .summoner-object.is-self .player-details .summoner-name {
+    color: #a46bff;
+}
+
+.summoner-object .summoner-container .champion-icon-container .champion-ring {
+    width: 62px;
+    height: 62px;
+    background-image: url(/fe/lol-champ-select/images/summoner-object/player-object-m.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    filter: hue-rotate(
+185deg
+) grayscale(1) contrast(1.1) brightness(1.1);
+}
+
+.postgame-background-image {
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background: url(https://nanowfx.com/theme/nanowbg.jpg)!important; */
+    background-blend-mode: hue;
+    filter: hue-rotate(
+64deg
+) saturate(1.5) contrast(1.1) brightness(1.5) blur(24px);
+}
+
+.match-history-stats-tb .stats-td-normal.current {
+    color: #914dff;
+}
+
+.lol-loading-screen-container .lol-loading-screen-lol-icon {
+    width: 140px;
+    height: 150px;
+    background-image: url(/fe/lol-static-assets/images/lol_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.lol-loading-screen-container.lol-loading-screen-default-state {
+    background: url(/fe/lol-static-assets/images/loading-bg.png) #010a13 no-repeat;
+    filter: hue-rotate(
+75deg
+) grayscale(1);
+}
+
+.lol-loading-screen-container.lol-loading-screen-default-state {
+    background: url(/fe/lol-static-assets/images/loading-bg.png) #010a13 no-repeat;
+    filter: hue-rotate(
+75deg
+) grayscale(1) contrast(1.0);
+}
+
+.lol-loading-screen-container .lol-loading-screen-lol-icon {
+    width: 140px;
+    height: 150px;
+    background-image: url(/fe/lol-static-assets/images/lol_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    filter: invert(1);
+}
+
+.team-avatar-wrapper.current .team-avatar-border:before, .team-avatar-wrapper.current .team-avatar-border:after {
+    border-color: #8804ff;
+    box-shadow: 1px 0px 21px #9100ff;
+}
+
+:host .lol-uikit-full-page-modal-container {
+    position: absolute;
+    left: 0px;
+    top: 77px;
+    width: 1055px;
+    height: 642px;
+    box-sizing: border-box;
+    filter: hue-rotate(
+-25deg
+) grayscale(1) saturate(1.5) contrast(1.1) brightness(1.5);
+}
+
+:host .parties-status-card-body .parties-status-card-map {
+    width: 34px;
+    height: 32px;
+    background-size: auto 64px;
+    background-repeat: no-repeat;
+    filter: grayscale(1) brightness(1.1) contrast(1.5);
+}
+
+.lol-uikit-full-page-modal-container {
+    position: absolute;
+    left: 0px;
+    top: 77px;
+    width: 1055px;
+    height: 642px;
+    box-sizing: border-box;
+    filter: hue-rotate(
+-25deg
+) grayscale(1) saturate(1.5) contrast(1.1) brightness(1.5);
+}
+
+.career-postgame-sub-navigation-component {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    top: 95px;
+    left: 24px;
+    filter: hue-rotate(
+215deg
+);
+}
+
+lol-social-chat-room .chat-room-input {
+    flex-shrink: 0;
+    box-sizing: border-box;
+    background-color: #010a13;
+    /* box-shadow: 0 0 2px 1px rgb(0 0 0 / 50%), inset 0 0 1px 1px #000, inset 0 -1px 1px 1px rgb(255 255 255 / 15%); */
+    padding: 7px 8px;
+    border: 0px;
+border-radius: 31px;
+    margin-top: 1px;
+}
+
+lol-social-chat-input .chat-input {
+      position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    padding: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    outline: none;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 25%) inset, 0 0 0 1px rgb(0 0 0 / 25%);
+    border-style: solid;
+    /* border-image: linear-gradient(to bottom, #5d4696 0%, #9a82fd5e 100%) 1; */
+    border-width: 1px;
+    border-radius: 31px;
+    border: 1px solid #a7a7ff;
+}
+
+lol-social-chat-input .chat-input:focus {
+    /* background: linear-gradient(to bottom, rgba(7,16,25,0.7), rgba(32,39,44,0.7)); */
+    /border-image: none;
+    background: #08080866;
+}
+
+.loading-tab::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://nanowfx.com/theme/bgcollec2.png);
+    background-repeat: no-repeat;
+    background-position-y: -80px;
+    opacity: 0.95;
+    
+}
+
+.hextech-loading-animation-component {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: hue-rotate(
+195deg
+) grayscale(1) brightness(2.5);
+}
+
+.summoner-object.is-self .active-bar {
+    background: #8f4fe4;
+}
+
+.skin-selection-indicator {
+    display: flex;
+    width: 376px;
+    height: 18px;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-top: -2px;
+    filter: hue-rotate(
+215deg
+);
+}
+
+.custom-game-team-member.is-current-custom-player {
+    color: #bebbca;
+}
+
+.clash-tab-team-content, .clash-hub, .custom-game-teams {
+    background-color: rgb(0 0 0 / 31%);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.custom-game-team-member .custom-placeholder-buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    filter: hue-rotate(
+205deg
+) contrast(1.1) saturate(1.5) grayscale(1) brightness(1.2);
+}
+
+.arrow-footer[version="7.13"] .confirm-button-container button.confirm {
+    height: 34px;
+    min-width: 170px;
+    margin-left: 29px;
+    padding-right: 1px;
+    color: #a3c7c7;
+    position: relative;
+    display: flex;
+    filter: hue-rotate(
+60deg
+) contrast(1.1);
+}
+
+.arrow-footer[version="7.13"] .confirm-button-container button.close {
+    width: 34px;
+    height: 34px;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    background-image: url(/fe/lol-shared-components/Normal.png);
+    filter: hue-rotate(
+75deg
+) grayscale(1) contrast(1.1);
+}
+
+.parties-header-container .lobby-header-wrapper .lobby-header-map-icon.game_map_summoners_rift {
+    background-image: url(/fe/lol-parties/map_sr.png);
+    filter: grayscale(1) contrast(1.1) brightness(1.5);
+}
+
+.parties-header-container .lobby-header-wrapper .lobby-header-map-icon.game_map_howling_abyss {
+    background-image: url(/fe/lol-parties/map_ha.png);
+	filter: grayscale(1) contrast(1.1) brightness(1.5);
+}
+
+.custom-game-team-member {
+    display: flex;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: thin solid rgb(64 64 64 / 37%);
+    padding: 0 0 0 8px;
+}
+
+.custom-game-invite-button-container {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    align-items: center;
+    margin-top: 4px;
+    filter: hue-rotate(
+-155deg
+) contrast(1.1);
+}
+
+.champion-grid .champion-grid-header lol-uikit-framed-dropdown {
+    margin-top: 8px;
+    margin-right: 3px;
+    height: 24px;
+    width: auto;
+    filter: hue-rotate(
+203deg
+) contrast(1.1);
+}
+
+lol-social-avatar .summoner-level-ring {
+    background-image: url(fe/lol-social/social_panel_level_ring.png);
+    background-position: center;
+    background-size: 76px 76px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: -10px;
+    left: -10px;
+    filter: grayscale(1) saturate(21.5);
+}
+
+.call-to-action-pip .pip-cta-loop {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: -5px;
+    border-radius: 10px;
+   
+    filter: hue-rotate(
+192deg
+) saturate(3.5);
+}
+
+
+.activity-center__tab_content {
+    background-color: unset;
+    border: none;
+    box-sizing: unset;
+    text-shadow: 0px 0px 10px #000000e8;
+    color: #5c577c;
+    cursor: pointer;
+    font: inherit;
+    height: 100%;
+    letter-spacing: inherit;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    text-transform: inherit;
+    width: 100%;
+    word-spacing: inherit;
+}
+
+.activity-center__tab_label_icon img {
+    height: 100%;
+    width: 100%;
+    filter: saturate(0.0);
+}
+
+.activity-center__background-component_video, .activity-center__background-component_video video {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    filter: saturate(0.0) brightness(1) contrast(1.1);
+}
+
+.activity-center__background-component__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    filter: grayscale(1) brightness(1) contrast(1.5);
+}
+
+.v2-banner-placeholder .invite-button-container .invite-button {
+    width: 80px;
+    height: 80px;
+    filter: grayscale(1) contrast(1.5);
+}
+
+.v2-parties-invite-info-panel .split-panel-header-title.active {
+    color: #d8d8d8;
+    text-shadow: 0px 0px 9px black;
+}
+
+.v2-parties-invite-info-panel .split-panel-header:after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: #f7f7f7;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    box-shadow: 0px 0px 10px #ffffff6b;
+    transition: left 0.5s cubic-bezier(0.87, -0.41, 0.19, 1.44);
+}
+
+.v2-parties-invite-info-panel .split-panel-header .split-panel-header-title .invite-header-suggested-info-icon {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+    background-image: url(/fe/lol-parties/icon-point-eligibility.png);
+    background-size: contain;
+    filter: grayscale(1) brightness(1.5);
+}
+
+.v2-parties-invite-info-panel .parties-invite-info-panel-list {
+    color: #a09b8c;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    -webkit-font-smoothing: subpixel-antialiased;
+    filter: grayscale(1) brightness(1.5);
+    text-shadow: 0px 0px 3px white;
+}
+
+.v2-parties-invite-info-panel .split-panel-header-title {
+    direction: ltr;
+    color: #dedede;
+    padding: 12px 0;
+    flex-grow: 1;
+    text-align: center;
+    text-shadow: 0px 0px 3px white;
+    color: #d8d8d8;
+    text-shadow: 0px 0px 9px black;
+}
+
+.find-match-button-wrapper .find-match-button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.selection-modal {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: hue-rotate(
+65deg
+) grayscale(1) contrast(1.5);
+}
+
+.v2-footer-notifications .parties-footer-warning {
+    direction: ltr;
+    color: #cdfafa;
+    margin-top: 10px;
+    background: #1e2328;
+    border: 1px solid rgba(160,155,140,0.1);
+    box-sizing: border-box;
+    border-radius: 16px;
+    filter: grayscale(1) brightness(1.1);
+}
+
+.v2-footer-component .center-container .close-button-container {
+    width: 150px;
+    filter: grayscale(1) contrast(1.1);
+}
+
+div.parties-custom-game-setup div.parties-custom-game-lower-half div.parties-custom-game-text-inputs ul.parties-custom-game-dropdown-fields > li:first-child {
+    padding: 0;
+    filter: grayscale(1) contrast(1.1);
+}
+/* by Nanow */
+
+.my-bubble {
+    margin: 0 5px 0 0;
+    background-color: #5b49a0!important;
+}
+
+.my-bubble::after {
+    right: -5px;
+    border-top-color: #5b49a0!important;
+}
+
+.loot-recipe-ui-meter-button .loot-meter-button-background {
+    position: absolute;
+    height: 90px;
+    width: 173px;
+    background-image: url(/fe/lol-loot/assets/flexible_crafter/craftButton-up.png);
+    filter: hue-rotate( 
+207deg
+ ) contrast(1.2);
+}
+
+.loot-recipe-ui-meter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 44px;
+    width: 142px;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0px 0px 14px white;
+    animation: loot-fade-in 0.5s forwards;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.loot-recipe-ui-metered .loot-meter-idle-container {
+    top: 1px;
+    filter: hue-rotate(
+985deg
+) contrast(0.7) saturate(1.9) grayscale(0) invert(1);
+}
+
+.v2-header-component .lobby-header-overlay {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+     background: transparent;
+    /* opacity: 0.8; */
+    filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.25));
+    pointer-events: none;
+}
+
+.clash-root-background-landing, .hold-leave, .collections-application, .clash-root-background-landing, .__rcp-fe-lol-store, .loot-backdrop.background-static, .personalized-offers-root, .parties-view, .yourshop-root, .clash-root-background {
+    background-color: #3838381f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.parties-view .parties-content {
+    padding-top: 79px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background: url(assets/background-collection.png);
+}
+
+
+.activity-center__background-component__blend {
+    background: linear-gradient(0deg,rgb(75 37 193 / 80%),transparent 22.78%),linear-gradient(126deg,transparent 62.34%,rgba(0,0,0,.6) 79.65%),linear-gradient(180deg,rgba(0,0,0,.5),transparent 14.58%),linear-gradient(90deg,rgb(10 0 94 / 70%),transparent 58.74%),radial-gradient(57.21% 36.54% at 106.68% 10.07%,rgb(0 0 0 / 70%) 0,transparent 100%);
+    height: 100%;
+    left: 0;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    width: calc(100% + 1px);
+}
+
+.basic-button:disabled .play-button-container .play-button-content .play-button-text, .basic-button.disabled .play-button-container .play-button-content .play-button-text {
+    color: #b5b5b5;
+    text-shadow: 0px 0px 20px #808080;
+}
+
+lol-uikit-flat-button-group lol-uikit-flat-button:last-child {
+    margin: 0;
+    filter: hue-rotate(
+45deg
+) grayscale(1) contrast(1.1);
+}
+
+/* by Nw */
+.player-history-others {
+    float: left;
+    line-height: 1.75;
+    transition: color 0.3s ease;
+    margin: 0 0 0 20px;
+    width: 155px;
+    /* filter: grayscale(1) brightness(1.5); */
+    text-shadow: 0px 0px 11px #00000069;
+    color: #74748a;
+}
+
+.replay-button .watch {
+    background-image: url(/fe/lol-shared-components/btn_replay_watch.png);
+    cursor: pointer;
+    filter: grayscale(1) contrast(1.5) brightness(1.5);
+}
+
+lol-social-avatar .unfilled.xp-ring {
+    background-color: #ffffff1f;
+    /* border: 1px solid #ffffff00; */
+}
+
+lol-social-avatar .filled.xp-ring {
+    background-color: #8956ec;
+    box-shadow: 0px 0px 10px #6e00ff;
+    background: linear-gradient(
+282deg
+, rgba(2,0,36,1) 0%, rgb(127 85 255) 100%);
+}
+
+.right-nav-vertical-rule {
+    width: 1px;
+    height: 57px;
+    background: linear-gradient(to top, rgba(205,190,145,0) 0%, #9d91ff 50%, rgba(205,190,145,0) 100%);
+}
+
+.currency-be-icon-static {
+    height: 100%;
+    width: 100%;
+    background-image: url(/fe/lol-static-assets/images/icon-be-150.png);
+    background-repeat: no-repeat;
+    background-position: -3px center;
+    background-size: contain;
+    filter: hue-rotate(
+65deg
+);
+}
+
+lol-social-availability-hitbox .availability-icon.chat, lol-social-availability-hitbox .availability-icon.available, lol-social-availability-hitbox .availability-icon.online {
+    background-color: #3c6913;
+    border-color: #c7f866;
+}
+
+lol-social-status .status-message.chat, lol-social-status .status-message-wrapper.chat {
+    color: #91d447;
+    /* text-shadow: 0px 0px 10px #6cff6c; */
+    /* filter: drop-shadow(0px 0px 6px #91d447); */
+}
+
+.lol-social-identity lol-social-avatar .summoner-level {
+    bottom: -7px;
+    left: 18px;
+    background: #333333;
+    border-radius: 28px;
+    font-size: 9px;
+    width: 21px;
+    border: 1px solid #c7c7c738;
+}
+
+.lol-social-identity lol-social-avatar .icon-image {
+    left: 4px;
+    top: 4px;
+    width: 49px;
+    widt: 49px;
+    height: 49px;
+    48px: ;
+}
+
+.style-profile-emblem-header-title {
+    overflow: hidden;
+    white-space: normal;
+    text-align: center;
+    flex-shrink: 0;
+    color: #9791cd;
+    margin-bottom: 2px;
+    text-shadow: 0px 0px 10px black;
+    direction: ltr;
+}
+
+.style-profile-trophy-component .style-profile-trophy-empty {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: contain;
+    background-position-y: 2px;
+    background-image: url(/fe/lol-profiles/Trophy_Empty.png);
+    background-repeat: no-repeat;
+    filter: brightness(2) saturate(1.3) grayscale(1);
+}
+
+.style-profile-clash-banner-component .style-profile-clash-banner-empty {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-image: url(/fe/lol-profiles/Banner_Empty.png);
+    background-repeat: no-repeat;
+    filter: brightness(2) saturate(1.3) grayscale(1);
+}
+
+.challenges-collection-component .background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-size: cover;
+    background-image: url(/fe/lol-shared-components/background-collection.png);
+    filter: hue-rotate(
+51deg
+);
+}
+
+.loot-crafter-reveal .accept-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 34px;
+    bottom: -50px;
+    pointer-events: auto;
+    filter: hue-rotate(
+-160deg
+) contrast(1.2) saturate(1.5);
+}
+
+.navbar_backdrop, .clash-tab-hub, .collections-routes, .__rcp-fe-lol-store iframe, .loot-contents, .parties-content, .clash-tab-team-root, .clash-tab-awards, .clash-tab-winners {
+    /* background-color: rgba(22, 22, 22, 0.626) !important; */
+    transition: all 0.2s ease-in-out !important;
+    background: url(assets/background-collection.png);
+}
+
+.parties-header-container .lobby-header-wrapper .lobby-header-right .lobby-header-game-type-details {
+    color: #9c91b1;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .1em;
+    line-height: 16px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+
+.parties-header-container .lobby-back-button-container .lobby-back-button {
+    height: 36px;
+    margin-right: 15px;
+    width: 36px;
+    filter: hue-rotate(207deg) brightness(1) contrast(1.5);
+}
+
+
+.lol-social-avatar .summoner-level-ring {
+    background-image: url(/fe/lol-social/social_panel_level_ring.png);
+    background-position: 50%;
+    background-size: 76px 76px;
+    height: 70px;
+    left: -10px;
+    position: absolute;
+    top: -10px;
+    width: 70px;
+    opacity: 0;
+}
+
+.lol-social-avatar .unfilled.xp-ring {
+    background-color: #323232;
+}
+
+
+.lol-uikit-flat-button {
+    color: #cdbe91;
+    font-size: var(--font-size, 14px);
+    font-family: var(--font-family, var(--font-display));
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 5px 1.3em;
+    height: var(--flat-button-height);
+    width: var(--flat-button-width);
+    min-height: var(--flat-button-min-height);
+    cursor: pointer;
+    -webkit-user-select: none;
+    box-shadow: 0 0 1px 1px #010a13, inset 0 0 1px 1px #010a13;
+    background: #1e2328;
+    border: var(--flat-button-border-width) solid transparent;
+    filter: hue-rotate(215deg) brightness(0.9) contrast(1.2);
+}
+
+
+.find-match-button-wrapper {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    /* filter: hue-rotate(
+45deg
+); */
+    filter: hue-rotate( 
+65deg
+ ) contrast(1.3);
+}
+
+.loot-recipe-ui-reroll .loot-reroll-state-machine uikit-video {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    pointer-events: none;
+    filter: grayscale(1) saturate(1.5) brightness(1.5);
+}
+
+.basic-button .play-button-container .play-button-content {
+position: relative;
+    width: calc(100% - 34px);
+    height: 110%;
+    left: -51px!important;
+    width: 131%!important;
+    padding: 6px;
+    box-sizing: border-box;
+    pointer-events: all;
+    cursor: pointer;
+    background: linear-gradient(178deg, #0000002e, #b495ff2b);
+    border-radius: 3px;
+    border: 1px solid #bdbdbd8a;
+    mix-blend-mode: color-dodge;
+    transition-duration: 0.6s;
+    z-index: 99;
+    /* filter: drop-shadow(2px 4px 6px black); */
+    transform: scale(1.2);
+}
+
+.basic-button .play-button-container .play-button-content:hover {
+background: linear-gradient(178deg, #c9bdbd00, #b495ff6b);
+    border: 2px solid #bdbdbdc9;
+    transition-duration: 0.6s;
+    transform: scale(1.25);
+}
+
+.basic-button .play-button-container .play-button-content .play-button-text, .animated-progress-bar.main .progress-percent-text {
+    color: #e2e2e2;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.075em;
+}
+
+.tft-player-card-self .inner-border-1, .tft-player-card-full .inner-border-1 {
+    border: thin solid rgb(44 38 68 / 70%);
+    box-shadow: 0px 0px 10px #6b5db91f;
+    border-radius: 2px;
+}
+
+.tft-player-card-self .icon-wrapper .icon-frame, .tft-player-card-full .icon-wrapper .icon-frame {
+    background-image: url(/fe/lol-parties/captain-icon-frame-with-level.png);
+    height: 111px;
+    filter: grayscale(1) contrast(1.5) brightness(1.5);
+}
+
+.tft-player-card-self .icon-wrapper .level-label, .tft-player-card-full .icon-wrapper .level-label {
+    color: #f0e6d2;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.075em;
+    text-shadow: 0px 0px 10px #d6cfff;
+}
+
+:host .loadouts-icon {
+    box-sizing: border-box;
+    border-width: var(--rcp-fe-lol-parties-cosmetics-picker-border-width);
+    border-style: solid;
+    border-color: #f0e6d2;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 50%);
+    border-image: linear-gradient(to bottom, #7679dc, #7bb0ff6b) 2;
+}
+
+.loadouts-icon {
+    box-sizing: border-box;
+    border-width: var(--rcp-fe-lol-parties-cosmetics-picker-border-width);
+    border-style: solid;
+    border-color: #f0e6d2;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 50%);
+    border-image: linear-gradient(to bottom, #7679dc, #7bb0ff6b) 2;
+}
+
+.tft-player-card:hover:not(.tft-player-card-self):not(.tft-player-invited) .inner-border-1 {
+    border: thin solid transparent;
+    border-image: linear-gradient(to top, #8062af, #b7b7b7) 1;
+}
+
+.tft-player-card.tft-player-placeholder .placeholder-invite-button {
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    filter: grayscale(1) contrast(1.2) brightness(1.1);
+}
+
+.tft-lobby .tft-cards-first-row .tft-cards-first-row-middle .tft-missions-button {
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    filter: brightness(1.2) contrast(1.3) hue-rotate(
+205deg
+) grayscale(1) blur(0px) drop-shadow(2px 4px 6px black);
+}
+
+
+filter: hue-rotate(
+205deg
+) brightness(1.2) contrast(1.5) !important;
+
+.lobby-header-map-icon {
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1) brightness(1.5) contrast(1.5);
+}
+
+.v2-header-component .lobby-header-content .lobby-back-button-container {
+    display: flex;
+    align-items: center;
+    margin: 0 18px;
+    filter: hue-rotate(
+205deg
+) contrast(1.1) saturate(1.5);
+}
+
+lol-social-friend-requests .friend-requests:not([disabled]):hover > .social-count-badge {
+    background-color: #a184fb;
+}
+
+lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-requests-header {
+    color: #d4c6ff;
+}
+
+.riotclient-app-controls .app-controls-button {
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    -webkit-mask-size: contain;
+    background-color: #4e435d;
+    /* filter: drop-shadow(0px 0px 16px red); */
+    /* box-shadow: 1px 0px 10px red; */
+    z-index: 2;
+}
+
+.riotclient-app-controls .app-controls-button:hover {
+    background-color: #8263ff;
+}
+
+.lol-uikit-flat-button-secondary-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 90px;
+    height: 100%;
+    min-height: 32px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    filter: hue-rotate(
+195deg
+) contrast(1.5);
+}
+
+.lol-settings-window-size-text {
+    color: #afa9e2;
+    margin-bottom: 8px;
+    direction: ltr;
+}
+
+.nephilim {
+	
+	margin-bottom: 22px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* text-shadow: 0px 0px 20px #a2a2a2; */
+    color: #e9bfff;
+    background: -webkit-linear-gradient(#994cff, #a2b2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.rcp-fe-lol-profiles-search-trail {
+    position: absolute;
+    top: -3px;
+    background-image: url(http://nanowfx.com/theme/search_trail_bg3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 42px;
+    filter: gray;
+}
+
+
+.testouille {
+	background: url(http://nanowfx.com/theme/bgcollec2.png);
+	background-color:transparent !important;
+}
+
+.champion-select .action-button-container::before, .champion-select .action-button-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/fe/lol-champ-select/images/config/linework-button.png);
+    background-repeat: no-repeat;
+    background-position: 50% -240px;
+    pointer-events: none;
+    filter: hue-rotate(
+85deg
+) grayscale(1) contrast(1.5) brightness(21.5);
+}
+
+.champion-select .action-button .action-button-background, .champion-select .action-button .action-button-background::before, .champion-select .action-button .action-button-background::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: center;
+    filter: hue-rotate(
+209deg
+) contrast(1.1);
+}
+
+.champion-select .picking .action-button, .champion-select.selected-screen .action-button {
+    color: #fdfdfd;
+    text-shadow: 0px 0px 20px #5b1f88;
+}
+
+.champion-select .champion-splash-background .background-vignette-container .champ-select-bg-darken {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/background-collection.png);
+    opacity: 0.55;
+    /* filter: hue-rotate(
+-5deg
+); */
+    filter: contrast(1.1) saturate(1.1) brightness(1.5) hue-rotate(
+25deg
+);
+}
+
+.sanctum-root-addon-component .sanctum-backdrop {
+    background: url(/fe/lol-static-assets/images/backgrounds/sanctum-background.jpg) no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 1055px;
+    filter: grayscale(1) brightness(3.5) contrast(2.5) blur(36px);
+}
+
+.shoppefront-background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    filter: grayscale(1) brightness(3.5) contrast(2.5) blur(36px);
+}
+
+
+.shoppefront-catalog-item .shared-reset-timer-component .reset-timer {
+    background: #ffffff1c;
+    color: #dfdfdf;
+    font-size: 11px;
+    padding: 2px 6px;
+    backdrop-filter: blur(80px);
+    border: 1px solid #ffffff40;
+    text-shadow: 0px 1px 0px black;
+}
+
+.summoner-object .video-magic-background-state-machine .video-magic-background {
+    display: flex;
+    height: 80px;
+    left: -12px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    filter: grayscale(1) brightness(5.5) contrast(5.5);
+}
+
+.champion-select .timer-status::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 815px auto;
+    background-repeat: no-repeat;
+    background-image: url(/fe/lol-champ-select/images/config/linework-top-glow.png);
+    background-position: center -203px;
+    filter: hue-rotate(
+65deg
+);
+}
+
+.champion-select .bottom-right-buttons {
+    position: absolute;
+    right: 20px;
+    bottom: 19px;
+    display: flex;
+    align-items: flex-end;
+    filter: grayscale(1) contrast(1.1);
+}
+
+.pick-ban-ring .ring-inner-mask {
+    -webkit-mask-image: linear-gradient(to bottom, #ff909000 0, transparent 62px, #000 82px, #000 464px, transparent 484px, transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    filter: hue-rotate(
+175deg
+) brightness(31.5) blur(1px);
+}
+
+.champion-select .timer-status .metal-work {
+    position: absolute;
+    top: 34px;
+    left: -61px;
+    filter: hue-rotate(
+205deg
+) grayscale(1) brightness(2.5) blur(0px);
+}
+
+.champion-select .timer-status .timer-container .timer {
+    width: 82px;
+    position: relative;
+    text-align: center;
+    font-style: normal;
+    color: #f0e6d2;
+    -webkit-text-fill-color: initial;
+    text-shadow: 0px 0px 20px #495fff;
+}
+
+.champion-grid .grid-champion > .grid-champion-hitbox > .grid-champion-overlay {
+    background-repeat: no-repeat;
+    background-size: 162px 486px;
+    background-image: url(/fe/lol-champ-select/images/config/reticle-sprite-324x324-2x6F.png);
+    background-position: 0px 120px;
+    filter: hue-rotate(
+115deg
+) grayscale(1) contrast(1.5) brightness(1.5) blur(0px) drop-shadow(0px 0px 10px #495fff);
+}
+
+.champion-grid .champion-container::-webkit-scrollbar-thumb, .champion-grid .champion-container ::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: 6px;
+    background-clip: padding-box;
+    min-height: 32px;
+    background-color: #bda7ff;
+}
+
+.champion-grid .champion-grid-header {
+    height: 40px;
+    border-bottom: thin solid rgb(105 103 208 / 60%);
+    margin: 0px 22px 13px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 578px;
+}
+
+.filter-icons .filter.active {
+    border-bottom: 3px solid #4e46c3;
+}
+
+.grid-champion > .grid-champion-hitbox > .champion-grid-champion-thumbnail {
+    display: inline-block;
+    width: 67px;
+    height: 67px;
+    border-image-slice: 1;
+    border-image-repeat: stretch;
+    -webkit-filter: none;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #2b2b2d;
+    border-radius: 11px;
+}
+
+.grid-champion > .grid-champion-hitbox > .champion-grid-champion-thumbnail::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border: 2px solid rgb(0 0 0 / 80%); */
+    box-shadow: inset 1px 1px 10px #511bbb9e;
+}
+
+.champion-select .loadouts-edit-wrapper .dropdowns .perks-page-dropdown-container {
+    position: relative;
+    width: 193px;
+    border-radius: 11px;
+    filter: contrast(1.5);
+}
+
+.summoner-object .image-ring-spinner.animated.is-self {
+    background: url(/fe/lol-champ-select/images/summoner-object/player-object-spinner-gold.png) no-repeat;
+    filter: hue;
+    filter: hue-rotate(
+655deg
+) saturate(5.9) contrast(1.1);
+}
+
+#rcp-fe-viewport-root > .rcp-fe-viewport-sidebar {
+    width: 223px;
+    height: 100%;
+    background: url(assets/background-collection.png) #ff0000ab!important;
+    background-size: cover!important;
+    background-position: -415%!important;
+    /* background-color: aliceblue; */
+    opacity: 1;
+}
+
+.reward-tracker-reward-item .reward-level.multiple {
+    min-width: calc(100% - 18px);
+    filter: hue-rotate(
+75deg
+) contrast(1.5);
+}
+
+.reward-tracker-reward-item .reward-level {
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    filter: grayscale(1) brightness(2.5) contrast(1.5);
+}
+
+
+.loot-crafter-reveal .content #splash-animated .splash .shard-overlay {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgb(88 86 255);
+    opacity: 0.4;
+    mix-blend-mode: hue;
+    -webkit-mask-image: radial-gradient(circle farthest-side at 50% 48%, rgb(170, 170, 170) 0%, rgb(255, 255, 255) 30%, transparent 50%);
+}
+
+.loot-crafter-reveal .reveal-counter-container {
+    position: absolute;
+    width: 100%;
+    bottom: -5px;
+    text-align: center;
+    filter: grayscale(1) contrast(1.5) brightness(1.5);
+}
+
+.loot-crafter-reveal-animations {
+	filter: grayscale(1) brightness(11.5) drop-shadow(0px 0px 26px white);
+    position: absolute;
+    margin-left: 311px;
+    margin-top: 291px;
+}
+
+lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
+    border: 1px solid #ffffff4a !important;
+    border-image: none !important;
+    border-radius: 18px !important;
+    background: #1c1c1c30 !important;
+    backdrop-filter: blur(11px) !important;
+    -webkit-backdrop-filter: blur(11px) !important;
+}
+
+
+#pengu-root {
+    font-size: .875rem;
+    font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+	opacity:0;
+}
