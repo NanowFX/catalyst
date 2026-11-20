@@ -87,7 +87,8 @@ Link: NOT RELEASED
 }
 
 .lol-social-avatar .filled.xp-ring {
-    background-color: #8359c5;
+        background: linear-gradient(45deg, #3f2dcf, #b049ffc7);
+    filter: contrast(1) brightness(1.2);
     /* box-shadow: red 10px -79px 10px; */
 }
 
