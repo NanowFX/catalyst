@@ -977,9 +977,7 @@ lol-social-panel {
     position: absolute;
     top: 88px;
     left: 32px;
-    filter: hue-rotate( 
-202deg
- );
+
 }
 
 .rcp-fe-lol-collections-champion-item .champion-thumbnail {
