@@ -2872,6 +2872,20 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     min-height: 32px;
 }
 
+.emote-wheel-wrapper-v2 .emote-main-wheel-frame:after {
+    align-items: center;
+    background: url(/fe/lol-static-assets/images/emote_wheel_images/main-wheel-metal-framework-merged-v2.png) 50%/contain no-repeat;
+    content: "";
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+    top: 38px;
+    width: 100%;
+    filter: hue-rotate(-145deg) grayscale(1) brightness(1.5) contrast(1.5);
+}
+
 
 .champion-grid .champion-grid-header {
     height: 40px;
