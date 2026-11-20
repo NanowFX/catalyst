@@ -3087,3 +3087,15 @@ lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
     border-color: #3f1d81;
     mix-blend-mode: overlay;
 }
+
+.social-count-badge {
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: #7150b3;
+    color: #ffffff;
+    padding: 0 6px;
+    height: 16px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
