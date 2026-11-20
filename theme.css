@@ -1179,9 +1179,7 @@ filter: hue-rotate(
 
 .game-type-card.selected .parties-game-type-lower-half {
     opacity: 1;
-    filter: hue-rotate(
-205deg
-);
+
 }
 
 .game-type-card.selected:not(.disabled) .parties-game-type-card-name, .parties-custom-game-subcategory-card.selected:not(.disabled) .parties-game-type-card-name, .game-type-card.selected:not(.disabled) .parties-game-type-card-break, .parties-custom-game-subcategory-card.selected:not(.disabled) .parties-game-type-card-break {
