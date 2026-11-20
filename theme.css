@@ -3069,3 +3069,21 @@ lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
 :host-context(lol-uikit-navigation-bar[type=nav-bar]) .section:not(.active):not(.disabled):active, :host-context(lol-uikit-navigation-bar[type=nav-bar-secondary]) .section:not(.active):not(.disabled):active {
     color: #7353bf;
 }
+
+.rcp-fe-lol-champion-mastery-champion-item-lcm .champion-thumbnail {
+    border: 4px solid #ffffff1a;
+    cursor: pointer;
+    height: 200px;
+    position: relative;
+    width: 134px;
+    backdrop-filter: blur(51px);
+    border-radius: 11px;
+}
+
+.rcp-fe-lol-champion-mastery-champion-item-lcm .champion-thumbnail:hover {
+    /* border-image-slice: 1; */
+    /* border-image-source: linear-gradient(-45deg,#c89b3c,#fafafa); */
+    border-radius: 8px;
+    border-color: #3f1d81;
+    mix-blend-mode: overlay;
+}
