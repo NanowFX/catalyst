@@ -1191,6 +1191,7 @@ filter: hue-rotate(
     filter: hue-rotate(202deg) brightness(1.1) contrast(4);
 }
 
+
 .parties-game-navs-break {
     border-left: thin solid #3f2878;
     display: inline-block;
@@ -2997,4 +2998,21 @@ lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
     font-size: .875rem;
     font-family: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
 	opacity:0;
+}
+
+.lol-settings-container {
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none;
+    width: 700px;
+}
+
+:host .lol-uikit-dialog-frame.top, :host .lol-uikit-dialog-frame.bottom {
+    border: 2px solid transparent;
+    /* border-image: linear-gradient(to top, #785a28 0, #463714 50%, #463714 100%) 1 stretch; */
+    border: 2px solid #614b78;
+    border-radius: 21px;
+    padding: 3ex;
 }
