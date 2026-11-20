@@ -1015,9 +1015,7 @@ lol-social-panel {
     background-size: contain;
     display: flex;
     flex-direction: column;
-    filter: hue-rotate( 
-210deg
- ) brightness(2.5);
+
 }
 
 .rcp-fe-lol-collections-collection-details .bottom-frame {
