@@ -1203,6 +1203,13 @@ filter: hue-rotate(
     filter: hue-rotate(202deg) brightness(1.1) contrast(4);
 }
 
+.parties-game-navs-break {
+    border-left: thin solid #3f2878;
+    display: inline-block;
+    height: 14px;
+    margin: 0 34px 0 11px;
+}
+
 .parties-game-type-card-category-btn.current, .parties-game-type-card-category-btn:hover {
     color: #ab97ff;
 }
