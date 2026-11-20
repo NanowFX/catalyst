@@ -1084,28 +1084,14 @@ filter: hue-rotate(
 }
 
 .emote-wheel-wrapper .emote-main-wheel-frame::after {
-    content: '';
-    background: url(/fe/lol-static-assets/images/emote_wheel_images/main-wheel-metal-framework-merged.png) center/contain no-repeat;
-    display: block;
-    transform: rotate(
-45deg
-);
-    position: absolute;
-    pointer-events: none;
-    width: 88%;
-    height: 88%;
-    top: 9px;
-    left: 27px;
+   
     filter: hue-rotate(
 215deg
 ) contrast(1.1) grayscale(0.2);
 }
 
 .emote-wheel-wrapper .emote-tray__start, .emote-wheel-wrapper .emote-tray__victory, .emote-wheel-wrapper .emote-tray__firstBlood, .emote-wheel-wrapper .emote-tray__ace {
-    background: url(/fe/lol-static-assets/images/emote_wheel_images/start-finish-inactive.png) center/contain no-repeat;
-    border-radius: 50%;
-    height: 120px;
-    position: static;
+   
     filter: hue-rotate( 
 215deg
  ) contrast(1) grayscale(1);
