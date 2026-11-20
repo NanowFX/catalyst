@@ -1014,7 +1014,7 @@ lol-social-panel {
     background-image: url(/fe/lol-collections/images/control-panel/control-panel-frame-mid.png);
     background-size: contain;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 
 }
 
