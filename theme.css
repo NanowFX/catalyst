@@ -3020,6 +3020,6 @@ lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
 :host .lol-uikit-dialog-frame {
     position: relative;
     background: #ffffff00;
-    box-shadow: 0 0 0 1px rgb(1 10 19 / 48%);
+    box-shadow: 0 0 0 1px rgb(1 10 19 / 48%); 
     backdrop-filter: blur(11px);
 }
