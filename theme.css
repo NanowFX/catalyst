@@ -1181,7 +1181,7 @@ filter: hue-rotate(
 }
 
 .parties-game-type-card-category-div .parties-game-type-card-category-radio-option {
-    background: url(/fe/lol-parties/btn_icon.png) no-repeat;
+    
     background-position: 0 0;
     background-size: 100%;
     flex-shrink: 0;
