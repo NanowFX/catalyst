@@ -3161,3 +3161,12 @@ lol-uikit-navigation-bar[type=tabbed] lol-uikit-navigation-item.lol-settings-nav
     font-weight: 700;
     margin: 0;
 }
+
+.additional-hotkeys-tb, .blocked-player-game-name-tagline, .license-agreement-settings, .lol-blocked-summoners, .lol-publishing-locale-preference-label, .lol-settings-account-verification-title, .lol-settings-chat-label-subtext, .lol-settings-checkbox-label, .lol-settings-checkbox-title, .lol-settings-general-subtitle, .lol-settings-general-title, .lol-settings-hotkeys_content__description, .lol-settings-ingame-dropdown-title, .lol-settings-ingame-interface-title, .lol-settings-ingame-keybind-dialog-unbind-button, .lol-settings-ingame-label, .lol-settings-ingame-slider-title, .lol-settings-ingame-sound-title, .lol-settings-legal-statements, .lol-settings-license, .lol-settings-nav-title, .lol-settings-repair-title, .lol-settings-sound-title, .lol-settings-version, .lol-settings-voice-agreement .lol-settings-voice-agreement-description, .lol-settings-voice-input .lol-settings-voice-input-device-label, .lol-settings-voice-input .lol-settings-voice-input-volume-label, .lol-settings-voice-input .lol-settings-voice-skins .lol-settings-voice-skins-brand, .lol-settings-voice-input .lol-settings-voice-skins .lol-settings-voice-skins-description, .lol-settings-voice-input .lol-settings-voice-skins .lol-settings-voice-skins-label, .lol-settings-voice-input-mode .lol-settings-voice-input-mode-description, .lol-settings-voice-input-mode .lol-settings-voice-input-mode-option, .lol-settings-voice-keybind-dialog-unbind-button, .lol-settings-voice-ptt .lol-settings-voice-ptt-label, .lol-settings-voice-ptt-modal .lol-settings-voice-ptt-modal-title, .lol-settings-voice-ptt-modal-warning, .lol-settings-voice-restricted, .lol-settings-voice-row, .lol-settings-voice-sensitivity .lol-settings-voice-sensitivity-label, .lol-settings-window-size-text, .no-blocked-summoners, .replays-settings-folder-path-title, .replays-settings-folder-path-value, .replays-settings-hints-description, .replays-settings-hints-title, .replays-settings-root-description {
+    color: #8b8cc3;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .025em;
+    line-height: 16px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
