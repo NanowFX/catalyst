@@ -998,16 +998,12 @@ lol-social-panel {
 
 .collections-application .champions-route .collection-search-panel .collection-grouping-options {
     margin-top: 12px;
-    filter: hue-rotate(
-210deg
-) grayscale(1) brightness(3.5);
+    filter: hue-rotate( 210deg ) grayscale(1) contrast(1.5);
 }
 
 .collections-application .champions-route .collection-search-panel .collection-sort-options {
     margin-top: 12px;
-    filter: hue-rotate(
-210deg
-) grayscale(1) brightness(3.5);
+    filter: hue-rotate( 210deg ) grayscale(1) contrast(1.5);
 }
 
 .rcp-fe-lol-collections-collection-details .collection-info-breakdown {
