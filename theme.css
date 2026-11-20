@@ -3013,3 +3013,14 @@ lol-uikit-framed-dropdown .ui-dropdown dt.ui-dropdown-current {
     box-shadow: 0 0 0 1px rgb(1 10 19 / 48%); 
     backdrop-filter: blur(11px);
 }
+
+.parallax-layer-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    filter: hue-rotate(25deg) brightness(1) contrast(1.1);
+}
