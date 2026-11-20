@@ -352,7 +352,7 @@ lol-social-arrow-toggle {
 .clash-tab-team-root,
 .clash-tab-awards,
 .clash-tab-winners {
-   background-color: rgba(22, 22, 22, 0.626) !important;
+   
    transition: all 0.2s ease-in-out !important;
 }
 
