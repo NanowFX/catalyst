@@ -1034,14 +1034,12 @@ lol-social-panel {
 }
 
 .rcp-fe-lol-collections-collection-details .top-frame {
-    background-image: url(/fe/lol-collections/images/control-panel/control-panel-frame-top.png);
+    
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 1px;
     height: 145px;
-    filter: hue-rotate(
-210deg
-) brightness(2.5);
+   filter: hue-rotate( 210deg ) brightness(1.5) contrast(1.5);
 }
 
 .player-history-result-text.victory {
