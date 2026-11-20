@@ -1729,9 +1729,7 @@ filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
     background-repeat: no-repeat;
     /* background: url(https://nanowfx.com/theme/nanowbg.jpg)!important; */
     background-blend-mode: hue;
-    filter: hue-rotate(
-64deg
-) saturate(1.5) contrast(1.1) brightness(1.5) blur(24px);
+    filter: hue-rotate( 64deg ) saturate(1) contrast(1.2) brightness(1) blur(2px);
 }
 
 .match-history-stats-tb .stats-td-normal.current {
