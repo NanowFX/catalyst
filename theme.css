@@ -886,12 +886,12 @@ lol-uikit-navigation-bar[type=nav-bar]) .section, :host-context(lol-uikit-naviga
 
 :host .parties-status-card-body .parties-status-card-map.game_map_howling_abyss {
     background-image: url(/fe/lol-parties/map_ha.png);
-   
+    filter: grayscale(1);
 }
 
 .parties-status-card-body .parties-status-card-map.game_map_howling_abyss {
     background-image: url(/fe/lol-parties/map_ha.png);
-  
+    filter: grayscale(1);
 }
 
 lol-social-panel {
@@ -899,7 +899,7 @@ lol-social-panel {
     flex-direction: column;
     animation: fadein 1s;
     font-size: 12px;
-    filter: brightness(1) grayscale(0) contrast(1.2);
+    filter: brightness(1) grayscale(1) contrast(1.2);
 }
 
 .style-profile-sub-nav {
@@ -960,7 +960,7 @@ lol-social-panel {
     transform: none;
     filter: hue-rotate(
 200deg
-) brightness(2.5) saturate(5.5) grayscale(0);
+) brightness(2.5) saturate(5.5) grayscale(1);
 }
 
 .match-summary-recently-played-champions-component .recent-activity-item {
@@ -970,7 +970,7 @@ lol-social-panel {
     margin-right: 26px;
     filter: hue-rotate(
 198deg
-) brightness(1.9) grayscale(0);
+) brightness(1.9) grayscale(1);
 }
 
 .collections-sub-nav-container {
@@ -998,12 +998,12 @@ lol-social-panel {
 
 .collections-application .champions-route .collection-search-panel .collection-grouping-options {
     margin-top: 12px;
-    filter: hue-rotate( 210deg ) grayscale(0) contrast(1.5);
+    filter: hue-rotate( 210deg ) grayscale(1) contrast(1.5);
 }
 
 .collections-application .champions-route .collection-search-panel .collection-sort-options {
     margin-top: 12px;
-    filter: hue-rotate( 210deg ) grayscale(0) contrast(1.5);
+    filter: hue-rotate( 210deg ) grayscale(1) contrast(1.5);
 }
 
 .rcp-fe-lol-collections-collection-details .collection-info-breakdown {
@@ -1055,7 +1055,7 @@ lol-social-panel {
     border-top: thin solid #1e282d;
 filter: hue-rotate( 
 210deg
- ) invert(0) grayscale(0) contrast(1.2) brightness(1.5);
+ ) invert(0) grayscale(1) contrast(1.2) brightness(1.5);
 }
 
 .rcp-fe-lol-match-details-overlay-sub-nav {
@@ -1090,7 +1090,7 @@ filter: hue-rotate(
    
     filter: hue-rotate( 
 215deg
- ) contrast(1) grayscale(0);
+ ) contrast(1) grayscale(1);
     width: 120px;
 }
 
@@ -1133,7 +1133,7 @@ filter: hue-rotate(
     width: 112px;
     filter: hue-rotate(
 -155deg
-) grayscale(0);
+) grayscale(1);
 }
 
 .emote-wheel-wrapper .emote-tray__start, .emote-wheel-wrapper .emote-tray__victory, .emote-wheel-wrapper .emote-tray__firstBlood, .emote-wheel-wrapper .emote-tray__ace {
@@ -1143,7 +1143,7 @@ filter: hue-rotate(
     position: static;
     /* filter: hue-rotate( 
 215deg
- ) contrast(1) grayscale(0); */
+ ) contrast(1) grayscale(1); */
     width: 120px;
     filter: grayscale(11) saturate(51.5) brightness(1.2);
 }
@@ -1152,7 +1152,7 @@ filter: hue-rotate(
     background: linear-gradient(to bottom, #cdbe91 0%, #c8aa6e 35%, #765c29 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: grayscale(0) brightness(1.3);
+    filter: grayscale(1) brightness(1.3);
 }
 
 .game-type-card .parties-game-type-icon .icon-frame, .parties-custom-game-subcategory-card .parties-game-type-icon .icon-frame {
@@ -1162,7 +1162,7 @@ filter: hue-rotate(
     margin-bottom: 15px;
     filter: hue-rotate(
 45deg
-) saturate(1.5) grayscale(0) brightness(1.2) contrast(1);
+) saturate(1.5) grayscale(1) brightness(1.2) contrast(1);
 }
 
 .game-type-card.selected .parties-game-type-lower-half {
@@ -1390,7 +1390,7 @@ lol-social-panel {
 
 :host .parties-status-card-body .parties-status-card-map.game_map_howling_abyss {
     background-image: url(/fe/lol-parties/map_ha.png);
-    
+    filter: grayscale(1);
 }
 
 .loot-recipe-ui-meter-button .loot-meter-button-background {
@@ -1551,7 +1551,7 @@ lol-social-panel {
     background-image: url(/fe/lol-loot/assets/loot_milestones/progress-bar-border.png);
     filter: hue-rotate(
 195deg
-) grayscale(0) brightness(1.8) contrast(1.1);
+) grayscale(1) brightness(1.8) contrast(1.1);
 }
 
 .loot-milestones-radial-progress .bottom {
@@ -1612,7 +1612,7 @@ lol-social-friend-requests .friend-requests-header {
     margin-top: 2px;
     filter: hue-rotate(
 215deg
-) grayscale(0) brightness(1.2);
+) grayscale(1) brightness(1.2);
     /* box-shadow: 0px 1px 11px red; */
 }
 
@@ -1711,7 +1711,7 @@ lol-social-friend-requests .friend-requests-header {
     height: 12px;
     background-image: url(/fe/lol-postgame/party-status-icon.svg);
     opacity: 0.5;
-    filter: grayscale(0) brightness(224) contrast(21.5) saturate(80.5);
+    filter: grayscale(1) brightness(224) contrast(21.5) saturate(80.5);
 }
 
 .loadouts-edit-component .loadout-edit-controls .loadout-edit-controls-row {
@@ -1736,7 +1736,7 @@ filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
     position: absolute;
     filter: hue-rotate(
 185deg
-) grayscale(0) contrast(1.1) brightness(1.1);
+) grayscale(1) contrast(1.1) brightness(1.1);
 }
 
 .postgame-background-image {
@@ -1770,14 +1770,14 @@ filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
     background: url(/fe/lol-static-assets/images/loading-bg.png) #010a13 no-repeat;
     filter: hue-rotate(
 75deg
-) grayscale(0);
+) grayscale(1);
 }
 
 .lol-loading-screen-container.lol-loading-screen-default-state {
     background: url(/fe/lol-static-assets/images/loading-bg.png) #010a13 no-repeat;
     filter: hue-rotate(
 75deg
-) grayscale(0) contrast(1.0);
+) grayscale(1) contrast(1.0);
 }
 
 .lol-loading-screen-container .lol-loading-screen-lol-icon {
@@ -1803,7 +1803,7 @@ filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
     height: 32px;
     background-size: auto 64px;
     background-repeat: no-repeat;
-    
+    filter: grayscale(1) brightness(1.1) contrast(1.5);
 }
 
 .lol-uikit-full-page-modal-container {
@@ -1815,7 +1815,7 @@ filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
     box-sizing: border-box;
     filter: hue-rotate(
 -25deg
-) grayscale(0) saturate(1.5) contrast(1.1) brightness(1.5);
+) grayscale(1) saturate(1.5) contrast(1.1) brightness(1.5);
 }
 
 .career-postgame-sub-navigation-component {
@@ -1897,7 +1897,7 @@ lol-social-chat-input .chat-input:focus {
     align-items: center;
     filter: hue-rotate(
 195deg
-) grayscale(0) brightness(2.5);
+) grayscale(1) brightness(2.5);
 }
 
 .summoner-object.is-self .active-bar {
@@ -1933,7 +1933,7 @@ lol-social-chat-input .chat-input:focus {
     align-items: center;
     filter: hue-rotate(
 205deg
-) contrast(1.1) saturate(1.5) grayscale(0) brightness(1.2);
+) contrast(1.1) saturate(1.5) grayscale(1) brightness(1.2);
 }
 
 .arrow-footer[version="7.13"] .confirm-button-container button.confirm {
@@ -1958,17 +1958,17 @@ lol-social-chat-input .chat-input:focus {
     background-image: url(/fe/lol-shared-components/Normal.png);
     filter: hue-rotate(
 75deg
-) grayscale(0) contrast(1.1);
+) grayscale(1) contrast(1.1);
 }
 
 .parties-header-container .lobby-header-wrapper .lobby-header-map-icon.game_map_summoners_rift {
     background-image: url(/fe/lol-parties/map_sr.png);
-    filter: grayscale(0) contrast(1.1) brightness(1.5);
+    filter: grayscale(1) contrast(1.1) brightness(1.5);
 }
 
 .parties-header-container .lobby-header-wrapper .lobby-header-map-icon.game_map_howling_abyss {
     background-image: url(/fe/lol-parties/map_ha.png);
-	filter: grayscale(0) contrast(1.1) brightness(1.5);
+	filter: grayscale(1) contrast(1.1) brightness(1.5);
 }
 
 .custom-game-team-member {
@@ -2014,7 +2014,7 @@ lol-social-avatar .summoner-level-ring {
     height: 70px;
     top: -10px;
     left: -10px;
-    filter: grayscale(0) saturate(21.5);
+    filter: grayscale(1) saturate(21.5);
 }
 
 .call-to-action-pip .pip-cta-loop {
@@ -2066,13 +2066,13 @@ lol-social-avatar .summoner-level-ring {
     height: 100%;
     object-fit: cover;
     width: 100%;
-    filter: grayscale(0) brightness(1) contrast(1.5);
+    filter: grayscale(1) brightness(1) contrast(1.5);
 }
 
 .v2-banner-placeholder .invite-button-container .invite-button {
     width: 80px;
     height: 80px;
-    filter: grayscale(0) contrast(1.5);
+    filter: grayscale(1) contrast(1.5);
 }
 
 .v2-parties-invite-info-panel .split-panel-header-title.active {
@@ -2099,7 +2099,7 @@ lol-social-avatar .summoner-level-ring {
     margin-left: 5px;
     background-image: url(/fe/lol-parties/icon-point-eligibility.png);
     background-size: contain;
-    filter: grayscale(0) brightness(1.5);
+    filter: grayscale(1) brightness(1.5);
 }
 
 .v2-parties-invite-info-panel .parties-invite-info-panel-list {
@@ -2109,7 +2109,7 @@ lol-social-avatar .summoner-level-ring {
     line-height: 20px;
     letter-spacing: 0.025em;
     -webkit-font-smoothing: subpixel-antialiased;
-    filter: grayscale(0) brightness(1.5);
+    filter: grayscale(1) brightness(1.5);
     text-shadow: 0px 0px 3px white;
 }
 
@@ -2141,7 +2141,7 @@ lol-social-avatar .summoner-level-ring {
     width: 100%;
     filter: hue-rotate(
 65deg
-) grayscale(0) contrast(1.5);
+) grayscale(1) contrast(1.5);
 }
 
 .v2-footer-notifications .parties-footer-warning {
@@ -2152,17 +2152,17 @@ lol-social-avatar .summoner-level-ring {
     border: 1px solid rgba(160,155,140,0.1);
     box-sizing: border-box;
     border-radius: 16px;
-    filter: grayscale(0) brightness(1.1);
+    filter: grayscale(1) brightness(1.1);
 }
 
 .v2-footer-component .center-container .close-button-container {
     width: 150px;
-    filter: grayscale(0) contrast(1.1);
+    filter: grayscale(1) contrast(1.1);
 }
 
 div.parties-custom-game-setup div.parties-custom-game-lower-half div.parties-custom-game-text-inputs ul.parties-custom-game-dropdown-fields > li:first-child {
     padding: 0;
-    filter: grayscale(0) contrast(1.1);
+    filter: grayscale(1) contrast(1.1);
 }
 /* by Nanow */
 
@@ -2257,7 +2257,7 @@ lol-uikit-flat-button-group lol-uikit-flat-button:last-child {
     margin: 0;
     filter: hue-rotate(
 45deg
-) grayscale(0) contrast(1.1);
+) grayscale(1) contrast(1.1);
 }
 
 /* by Nw */
@@ -2267,7 +2267,7 @@ lol-uikit-flat-button-group lol-uikit-flat-button:last-child {
     transition: color 0.3s ease;
     margin: 0 0 0 20px;
     width: 155px;
-    /* filter: grayscale(0) brightness(1.5); */
+    /* filter: grayscale(1) brightness(1.5); */
     text-shadow: 0px 0px 11px #00000069;
     color: #74748a;
 }
@@ -2275,7 +2275,7 @@ lol-uikit-flat-button-group lol-uikit-flat-button:last-child {
 .replay-button .watch {
     background-image: url(/fe/lol-shared-components/btn_replay_watch.png);
     cursor: pointer;
-    filter: grayscale(0) contrast(1.5) brightness(1.5);
+    filter: grayscale(1) contrast(1.5) brightness(1.5);
 }
 
 lol-social-avatar .unfilled.xp-ring {
@@ -2358,7 +2358,7 @@ lol-social-status .status-message.chat, lol-social-status .status-message-wrappe
     background-position-y: 2px;
     background-image: url(/fe/lol-profiles/Trophy_Empty.png);
     background-repeat: no-repeat;
-    filter: brightness(2) saturate(1.3) grayscale(0);
+    filter: brightness(2) saturate(1.3) grayscale(1);
 }
 
 .style-profile-clash-banner-component .style-profile-clash-banner-empty {
@@ -2367,7 +2367,7 @@ lol-social-status .status-message.chat, lol-social-status .status-message-wrappe
     background-size: contain;
     background-image: url(/fe/lol-profiles/Banner_Empty.png);
     background-repeat: no-repeat;
-    filter: brightness(2) saturate(1.3) grayscale(0);
+    filter: brightness(2) saturate(1.3) grayscale(1);
 }
 
 .challenges-collection-component .background {
@@ -2479,7 +2479,7 @@ lol-social-status .status-message.chat, lol-social-status .status-message-wrappe
     left: 50%;
     display: flex;
     pointer-events: none;
-    filter: grayscale(0) saturate(1.5) brightness(1.5);
+    filter: grayscale(1) saturate(1.5) brightness(1.5);
 }
 
 .basic-button .play-button-container .play-button-content {
@@ -2526,7 +2526,7 @@ background: linear-gradient(178deg, #c9bdbd00, #b495ff6b);
 .tft-player-card-self .icon-wrapper .icon-frame, .tft-player-card-full .icon-wrapper .icon-frame {
     background-image: url(/fe/lol-parties/captain-icon-frame-with-level.png);
     height: 111px;
-    filter: grayscale(0) contrast(1.5) brightness(1.5);
+    filter: grayscale(1) contrast(1.5) brightness(1.5);
 }
 
 .tft-player-card-self .icon-wrapper .level-label, .tft-player-card-full .icon-wrapper .level-label {
@@ -2577,7 +2577,7 @@ background: linear-gradient(178deg, #c9bdbd00, #b495ff6b);
     top: 0;
     left: 0;
     margin-top: 0;
-    filter: grayscale(0) contrast(1.2) brightness(1.1);
+    filter: grayscale(1) contrast(1.2) brightness(1.1);
 }
 
 .tft-lobby .tft-cards-first-row .tft-cards-first-row-middle .tft-missions-button {
@@ -2586,7 +2586,7 @@ background: linear-gradient(178deg, #c9bdbd00, #b495ff6b);
     right: 26px;
     filter: brightness(1.2) contrast(1.3) hue-rotate(
 205deg
-) grayscale(0) blur(0px) drop-shadow(2px 4px 6px black);
+) grayscale(1) blur(0px) drop-shadow(2px 4px 6px black);
 }
 
 
@@ -2599,7 +2599,7 @@ filter: hue-rotate(
     width: 30px;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: grayscale(0) brightness(1.5) contrast(1.5);
+    filter: grayscale(1) brightness(1.5) contrast(1.5);
 }
 
 .v2-header-component .lobby-header-content .lobby-back-button-container {
@@ -2698,7 +2698,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     pointer-events: none;
     filter: hue-rotate(
 85deg
-) grayscale(0) contrast(1.5) brightness(21.5);
+) grayscale(1) contrast(1.5) brightness(21.5);
 }
 
 .champion-select .action-button .action-button-background, .champion-select .action-button .action-button-background::before, .champion-select .action-button .action-button-background::after {
@@ -2741,14 +2741,14 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     overflow: hidden;
     position: absolute;
     width: 1055px;
-    filter: grayscale(0) brightness(3.5) contrast(2.5) blur(36px);
+    filter: grayscale(1) brightness(3.5) contrast(2.5) blur(36px);
 }
 
 .shoppefront-background {
     height: 100%;
     position: absolute;
     width: 100%;
-    filter: grayscale(0) brightness(3.5) contrast(2.5) blur(36px);
+    filter: grayscale(1) brightness(3.5) contrast(2.5) blur(36px);
 }
 
 
@@ -2769,7 +2769,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     opacity: 1;
     position: absolute;
     top: 0;
-    filter: grayscale(0) brightness(5.5) contrast(5.5);
+    filter: grayscale(1) brightness(5.5) contrast(5.5);
 }
 
 .champion-select .timer-status::before {
@@ -2794,7 +2794,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     bottom: 19px;
     display: flex;
     align-items: flex-end;
-    filter: grayscale(0) contrast(1.1);
+    filter: grayscale(1) contrast(1.1);
 }
 
 .pick-ban-ring .ring-inner-mask {
@@ -2811,7 +2811,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     left: -61px;
     filter: hue-rotate(
 205deg
-) grayscale(0) brightness(2.5) blur(0px);
+) grayscale(1) brightness(2.5) blur(0px);
 }
 
 .champion-select .timer-status .timer-container .timer {
@@ -2831,7 +2831,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     background-position: 0px 120px;
     filter: hue-rotate(
 115deg
-) grayscale(0) contrast(1.5) brightness(1.5) blur(0px) drop-shadow(0px 0px 10px #495fff);
+) grayscale(1) contrast(1.5) brightness(1.5) blur(0px) drop-shadow(0px 0px 10px #495fff);
 }
 
 .champion-grid .champion-container::-webkit-scrollbar-thumb, .champion-grid .champion-container ::-webkit-scrollbar-thumb {
@@ -2862,7 +2862,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     position: absolute;
     top: 38px;
     width: 100%;
-    filter: hue-rotate(-145deg) grayscale(0) brightness(1.5) contrast(1.5);
+    filter: hue-rotate(-145deg) grayscale(1) brightness(1.5) contrast(1.5);
 }
 
 
@@ -2941,7 +2941,7 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     height: 22px;
     display: flex;
     flex-direction: row;
-    filter: grayscale(0) brightness(2.5) contrast(1.5);
+    filter: grayscale(1) brightness(2.5) contrast(1.5);
 }
 
 
@@ -2962,11 +2962,11 @@ lol-social-friend-requests .friend-requests:not([disabled]):hover .friend-reques
     width: 100%;
     bottom: -5px;
     text-align: center;
-    filter: grayscale(0) contrast(1.5) brightness(1.5);
+    filter: grayscale(1) contrast(1.5) brightness(1.5);
 }
 
 .loot-crafter-reveal-animations {
-	filter: grayscale(0) brightness(11.5) drop-shadow(0px 0px 26px white);
+	filter: grayscale(1) brightness(11.5) drop-shadow(0px 0px 26px white);
     position: absolute;
     margin-left: 311px;
     margin-top: 291px;
@@ -3152,7 +3152,7 @@ lol-uikit-navigation-bar[type=tabbed] lol-uikit-navigation-item.lol-settings-nav
     background: url(/fe/lol-uikit/images/checkbox-spritesheet.png) no-repeat;
     cursor: pointer;
     flex-shrink: 0;
-    
+    filter: grayscale(1) brightness(1.5) contrast(1.5);
 }
 
 .lol-settings-general-subtitle {
