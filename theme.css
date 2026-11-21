@@ -1783,7 +1783,7 @@ filter: hue-rotate( 205deg ) contrast(1.2) saturate(1);
 .lol-loading-screen-container .lol-loading-screen-lol-icon {
     width: 140px;
     height: 150px;
-    background-image: url(/fe/lol-static-assets/images/lol_icon.png);
+    
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 100px;
