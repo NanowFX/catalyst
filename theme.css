@@ -3242,3 +3242,29 @@ lol-uikit-flat-input input[type='search']:focus {
     letter-spacing: .075em;
     line-height: 18px;
 }
+
+.match-summary-general-match-summary-component:hover {
+    background: #5a24ff0d;
+    backdrop-filter: blur(141px);
+    /* padding: 7px; */
+    transform: scale(1.03);
+}
+
+
+element.style {
+}
+.match-summary-general-match-summary-component:first-child {
+    margin-top: 0;
+}
+.match-summary-general-match-summary-component {
+    background-image: url(/fe/lol-match-history/player_object_border_left.png);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 66px;
+    margin-top: -3px;
+    padding: 12px 0 13px;
+    position: relative;
+    width: 100%;
+    transition-duration: 0.3s;
+}
